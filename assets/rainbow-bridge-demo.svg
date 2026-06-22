@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+  <rect width="900" height="420" rx="28" fill="#10131f"/>
+  <text x="48" y="64" fill="#ffffff" font-size="34" font-family="Arial, sans-serif" font-weight="700">Rainbow Bridge Demo Flow</text>
+  <text x="50" y="100" fill="#b7bed3" font-size="18" font-family="Arial, sans-serif">AI pet-loss care service: profile → grief check-in → memorial message → recovery mission → memory box</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="55" y="150" width="145" height="150" rx="22" fill="#7c5cff" opacity="0.92"/>
+    <text x="82" y="210" fill="white" font-size="20" font-weight="700">Profile</text>
+    <text x="82" y="242" fill="white" font-size="14">Pet memory</text>
+    <text x="82" y="264" fill="white" font-size="14">and context</text>
+    <rect x="225" y="150" width="145" height="150" rx="22" fill="#4f7cff" opacity="0.92"/>
+    <text x="252" y="210" fill="white" font-size="20" font-weight="700">Check-in</text>
+    <text x="252" y="242" fill="white" font-size="14">Emotion score</text>
+    <text x="252" y="264" fill="white" font-size="14">risk routing</text>
+    <rect x="395" y="150" width="145" height="150" rx="22" fill="#20b486" opacity="0.92"/>
+    <text x="422" y="210" fill="white" font-size="20" font-weight="700">Message</text>
+    <text x="422" y="242" fill="white" font-size="14">Gemini + RAG</text>
+    <text x="422" y="264" fill="white" font-size="14">memorial letter</text>
+    <rect x="565" y="150" width="145" height="150" rx="22" fill="#f59e0b" opacity="0.92"/>
+    <text x="592" y="210" fill="white" font-size="20" font-weight="700">Mission</text>
+    <text x="592" y="242" fill="white" font-size="14">Recovery task</text>
+    <text x="592" y="264" fill="white" font-size="14">reward gate</text>
+    <rect x="735" y="150" width="145" height="150" rx="22" fill="#ef5da8" opacity="0.92"/>
+    <text x="762" y="210" fill="white" font-size="20" font-weight="700">Memory</text>
+    <text x="762" y="242" fill="white" font-size="14">TTS / GIF</text>
+    <text x="762" y="264" fill="white" font-size="14">download box</text>
+  </g>
+  <g stroke="#ffffff" stroke-width="4" stroke-linecap="round" opacity="0.75">
+    <path d="M205 225 H220"/><path d="M375 225 H390"/><path d="M545 225 H560"/><path d="M715 225 H730"/>
+  </g>
+  <text x="55" y="354" fill="#dce2f0" font-size="18" font-family="Arial, sans-serif">Result: 8 core features completed · crisis routing 40/40 · G-Eval 4.76–4.83/5.0 · TTS CER 1.0% / 5.5%</text>
+</svg>
