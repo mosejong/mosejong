@@ -24,6 +24,8 @@
 반려동물의 시한부 선고부터 이별, 장례, 회복까지 이어지는 **AI 펫로스 케어 서비스**입니다.  
 팀장으로 프로젝트 범위와 발표 흐름을 정리했고, 백엔드 API·AI 연동·위기 감지 안전 라우팅·배포 흐름을 중심으로 구현했습니다.
 
+<img src="./assets/rainbow-bridge-demo.gif" width="720" alt="Rainbow Bridge demo" />
+
 **Role**
 
 - Team Lead / PM
