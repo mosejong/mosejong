@@ -13,5 +13,4 @@
 - AI 서비스 파이프라인 설계 및 구현
 - LLM/RAG 기반 응답 흐름 설계
 - 모델 출력 실패 가능성 분석 및 안전 라우팅
-- Slot Protection, Glossary, Template, 검수 루프를 통한 품질 통제
-- FastAPI 기반 백엔드 API 설계
+- Slot Protection, Glossary, Template, 검수 루프를 통한 품
