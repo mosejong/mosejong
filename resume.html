@@ -57,14 +57,17 @@
       border: 3px solid rgba(255,255,255,0.26);
       overflow: hidden;
       margin-bottom: 16px;
-      background: rgba(255,255,255,0.08);
+      background: linear-gradient(135deg, rgba(255,255,255,0.20), rgba(255,255,255,0.06));
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
-    .photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
+    .photo-initials {
+      font-size: 31px;
+      font-weight: 850;
+      letter-spacing: -0.04em;
+      color: #ffffff;
     }
 
     .name {
@@ -383,9 +386,15 @@
 <body>
   <div class="page">
     <aside>
-      <div class="photo">
-        <img src="https://avatars.githubusercontent.com/u/247134069?v=4" alt="모세종 프로필 사진" />
+      <div class="photo" aria-label="프로필 사진 자리">
+        <div class="photo-initials">MS</div>
       </div>
+      <!--
+        개인정보 보호용 기본값은 이니셜입니다.
+        로컬 PC에서만 사진을 넣고 PDF로 저장하려면 위 photo 영역을 아래처럼 바꾸면 됩니다.
+        <div class="photo"><img src="./profile.jpg" alt="모세종 프로필 사진" /></div>
+        이때 profile.jpg는 GitHub에 올리지 말고, resume.html과 같은 폴더에만 두세요.
+      -->
 
       <h1 class="name">모세종</h1>
       <div class="role">AI Service Builder<br/>Backend-oriented Junior Developer</div>
