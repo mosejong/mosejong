@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>모세종 Resume</title>
+  <style>
+    :root {
+      --ink: #18212f;
+      --muted: #687386;
+      --line: #dfe5ee;
+      --paper: #ffffff;
+      --bg: #eef1f6;
+      --navy: #172033;
+      --blue: #2f6feb;
+      --soft: #f5f7fb;
+      --tag: #edf3ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
+      line-height: 1.45;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 24px auto;
+      background: var(--paper);
+      box-shadow: 0 12px 36px rgba(20, 30, 50, 0.16);
+      display: grid;
+      grid-template-columns: 70mm 1fr;
+      overflow: hidden;
+    }
+
+    aside {
+      background: var(--navy);
+      color: #fff;
+      padding: 28px 24px;
+    }
+
+    main {
+      padding: 28px 30px 24px;
+    }
+
+    .name {
+      font-size: 34px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      margin: 0 0 6px;
+    }
+
+    .role {
+      font-size: 13px;
+      font-weight: 700;
+      color: #a9c7ff;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      line-height: 1.35;
+      margin-bottom: 18px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #f7faff 0%, #eef4ff 100%);
+      border: 1px solid #dce8ff;
+      border-radius: 16px;
+      padding: 16px 18px;
+      margin-bottom: 18px;
+    }
+
+    .hero .headline {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      margin: 0 0 8px;
+      color: #14213d;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 12.5px;
+      color: #344057;
+    }
+
+    h2 {
+      font-size: 13px;
+      margin: 22px 0 10px;
+      color: #111827;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2::before {
+      content: "";
+      width: 6px;
+      height: 18px;
+      border-radius: 999px;
+      background: var(--blue);
+      display: inline-block;
+    }
+
+    aside h2 {
+      color: #fff;
+      margin-top: 24px;
+    }
+
+    aside h2::before { background: #8db5ff; }
+
+    .side-block { margin-bottom: 18px; }
+
+    .contact a, .contact div {
+      color: #e7ecf8;
+      text-decoration: none;
+      font-size: 11.5px;
+      display: block;
+      margin: 7px 0;
+      word-break: break-all;
+    }
+
+    .summary {
+      color: #d9e3f7;
+      font-size: 11.8px;
+      margin: 0;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 8px;
+    }
+
+    .tag {
+      font-size: 10.8px;
+      background: rgba(255,255,255,0.11);
+      border: 1px solid rgba(255,255,255,0.16);
+      color: #eef4ff;
+      padding: 4px 7px;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .light-tag {
+      background: var(--tag);
+      color: #1f4fa3;
+      border-color: #d8e6ff;
+    }
+
+    .principles {
+      padding-left: 16px;
+      margin: 8px 0 0;
+      color: #d9e3f7;
+      font-size: 11.5px;
+    }
+
+    .principles li { margin: 6px 0; }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 17px;
+    }
+
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 10px;
+      background: #fff;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 20px;
+      color: var(--blue);
+      line-height: 1;
+      margin-bottom: 5px;
+    }
+
+    .metric span {
+      font-size: 10.5px;
+      color: var(--muted);
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: 1fr 16px 1fr 16px 1fr;
+      align-items: center;
+      gap: 6px;
+      margin: 12px 0 18px;
+    }
+
+    .flow-card {
+      border: 1px solid var(--line);
+      background: var(--soft);
+      border-radius: 14px;
+      padding: 11px 10px;
+      min-height: 70px;
+    }
+
+    .flow-card b {
+      display: block;
+      font-size: 12.5px;
+      margin-bottom: 5px;
+      color: #18212f;
+    }
+
+    .flow-card span {
+      color: var(--muted);
+      font-size: 10.8px;
+    }
+
+    .arrow {
+      color: var(--blue);
+      font-weight: 800;
+      text-align: center;
+    }
+
+    .project {
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+      margin-top: 12px;
+    }
+
+    .project:first-of-type {
+      border-top: 0;
+      padding-top: 0;
+    }
+
+    .project-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      margin-bottom: 5px;
+    }
+
+    .project-title {
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #101828;
+    }
+
+    .project-sub {
+      font-size: 11px;
+      color: var(--blue);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .project p {
+      margin: 4px 0 7px;
+      font-size: 11.8px;
+      color: #344057;
+    }
+
+    ul {
+      margin: 7px 0 0;
+      padding-left: 17px;
+    }
+
+    li {
+      font-size: 11.5px;
+      color: #374151;
+      margin: 4px 0;
+    }
+
+    .work {
+      background: #fbfcff;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin-top: 10px;
+    }
+
+    .work-title {
+      font-weight: 800;
+      font-size: 13.5px;
+      color: #101828;
+    }
+
+    .work-sub {
+      font-size: 11px;
+      color: var(--muted);
+      margin-top: 2px;
+    }
+
+    .compact-list li { font-size: 11.2px; }
+
+    .footer-note {
+      margin-top: 16px;
+      padding-top: 10px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 10.5px;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        margin: 0;
+        box-shadow: none;
+      }
+      @page { size: A4; margin: 0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <aside>
+      <h1 class="name">모세종</h1>
+      <div class="role">AI Service Builder<br/>Backend-oriented Junior Developer</div>
+
+      <section class="side-block contact">
+        <h2>Contact</h2>
+        <a href="https://github.com/mosejong">github.com/mosejong</a>
+        <a href="https://github.com/mosejong/mosejong/blob/main/RESUME.md">GitHub Resume</a>
+        <a href="https://github.com/mosejong/context-capsule">Context Capsule</a>
+        <div>Seoul, South Korea</div>
+      </section>
+
+      <section class="side-block">
+        <h2>Profile</h2>
+        <p class="summary">
+          물류·운영 현장 경험 8년 9개월을 바탕으로 사용자 문제와 서비스 제약을 함께 고려하는 AI 서비스 개발자를 지향합니다.
+          AI 기능을 단순 호출이 아니라 실제 사용자가 이해하고 행동할 수 있는 서비스 흐름으로 연결하는 데 관심이 있습니다.
+        </p>
+      </section>
+
+      <section class="side-block">
+        <h2>Core Skills</h2>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">FastAPI</span>
+          <span class="tag">REST API</span>
+          <span class="tag">MongoDB</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Docker</span>
+          <span class="tag">NCP</span>
+          <span class="tag">nginx</span>
+          <span class="tag">GitHub Actions</span>
+          <span class="tag">LLM API</span>
+          <span class="tag">Prompt Engineering</span>
+          <span class="tag">Translation Model</span>
+          <span class="tag">Glossary</span>
+          <span class="tag">TTS</span>
+          <span class="tag">Streamlit</span>
+        </div>
+      </section>
+
+      <section class="side-block">
+        <h2>Working Principles</h2>
+        <ul class="principles">
+          <li>AI 출력은 검증해야 할 중간 산출물로 봅니다.</li>
+          <li>사용자 상황, 비용 구조, 운영 제약을 함께 봅니다.</li>
+          <li>AI가 제안하고 사람이 검토·승인하는 구조를 선호합니다.</li>
+        </ul>
+      </section>
+
+      <section class="side-block">
+        <h2>Education</h2>
+        <p class="summary">
+          AI Human 국비교육과정<br/>
+          Python, FastAPI, LLM API, 번역 모델, TTS 기반 AI 서비스 프로젝트 수행
+        </p>
+      </section>
+    </aside>
+
+    <main>
+      <section class="hero">
+        <div class="headline">운영 경험을 AI 서비스 흐름으로 연결하는 개발자</div>
+        <p>
+          8년 9개월의 물류·운영 경험을 바탕으로, 사용자 문제와 실제 운영 제약을 먼저 보고 AI 기능을 서비스 흐름 안에 설계합니다.
+          SchoolBridge와 Rainbow Bridge 팀 프로젝트를 통해 AI 서비스의 번역, TTS, 안전 라우팅, 배포, 협업을 경험했고,
+          그 과정에서 느낀 AI 작업 인수인계 문제를 Context Capsule 개인 프로젝트로 확장하고 있습니다.
+        </p>
+      </section>
+
+      <section class="metrics">
+        <div class="metric"><strong>8y 9m</strong><span>물류·운영 현장 경험</span></div>
+        <div class="metric"><strong>2</strong><span>실서비스형 AI 팀 프로젝트</span></div>
+        <div class="metric"><strong>1</strong><span>문제의식 기반 개인 프로젝트</span></div>
+      </section>
+
+      <section class="flow">
+        <div class="flow-card"><b>Operations</b><span>흐름·병목·검수·납기 감각</span></div>
+        <div class="arrow">→</div>
+        <div class="flow-card"><b>AI Service Projects</b><span>번역/TTS·안전 라우팅·배포 경험</span></div>
+        <div class="arrow">→</div>
+        <div class="flow-card"><b>Context Capsule</b><span>AI 작업 인수인계 도구로 확장</span></div>
+      </section>
+
+      <h2>Project Highlights</h2>
+
+      <article class="project">
+        <div class="project-head">
+          <div class="project-title">SchoolBridge</div>
+          <div class="project-sub">AI Translation · TTS</div>
+        </div>
+        <p>
+          다문화가정 학부모가 가정통신문의 날짜, 준비물, 비용, 제출 여부를 놓치지 않도록 돕는 AI 번역·요약·TTS 서비스입니다.
+        </p>
+        <ul>
+          <li>번역/TTS 파이프라인, 학교 도메인 글로사리, 핵심 정보 보존 후처리 담당</li>
+          <li>유료 API 의존도를 낮추기 위해 무료/로컬 기반 번역 모델을 검토</li>
+          <li>모델 교체 후에도 유지 가능한 글로사리·템플릿 보정 구조 설계</li>
+        </ul>
+        <div class="tags">
+          <span class="tag light-tag">FastAPI</span><span class="tag light-tag">NLLB</span><span class="tag light-tag">Glossary</span><span class="tag light-tag">Edge-TTS</span><span class="tag light-tag">Docker</span>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <div class="project-title">Rainbow Bridge</div>
+          <div class="project-sub">Team Lead · AI Care Service</div>
+        </div>
+        <p>
+          펫로스를 겪는 보호자를 위한 감정 체크인, 미션, 추모 메시지, TTS/영상 생성 흐름을 제공하는 AI 애프터케어 서비스입니다.
+        </p>
+        <ul>
+          <li>팀장/PM으로 서비스 흐름 설계, 역할 분담, 일정 관리, 발표 구조 정리 담당</li>
+          <li>NCP 서버 운영, Docker 배포 환경, nginx/HTTPS, GPU 터널링 경험</li>
+          <li>AI·프론트엔드·백엔드·멀티미디어 파트를 하나의 사용자 흐름으로 연결</li>
+        </ul>
+        <div class="tags">
+          <span class="tag light-tag">FastAPI</span><span class="tag light-tag">MongoDB</span><span class="tag light-tag">NCP</span><span class="tag light-tag">Docker</span><span class="tag light-tag">TTS</span>
+        </div>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <div class="project-title">Context Capsule</div>
+          <div class="project-sub">Personal Product</div>
+        </div>
+        <p>
+          팀 프로젝트와 AI 협업 과정에서 느낀 컨텍스트 낭비와 작업 인수인계 문제를 해결하기 위한 개인 프로젝트입니다.
+        </p>
+        <ul>
+          <li>레포지토리와 작업 요청을 분석해 관련 파일, 작업 브리프, 리스크, GitHub Issue Packet 생성</li>
+          <li>AI가 제안하고 사람이 검토·승인하는 Human-in-the-loop 구조 지향</li>
+          <li>Streamlit 대시보드, CLI, Windows 실행 흐름 제공</li>
+        </ul>
+        <div class="tags">
+          <span class="tag light-tag">Python</span><span class="tag light-tag">Streamlit</span><span class="tag light-tag">CLI</span><span class="tag light-tag">RAG-like Retrieval</span><span class="tag light-tag">Token Budgeting</span>
+        </div>
+      </article>
+
+      <h2>Work Experience</h2>
+      <section class="work">
+        <div class="work-title">미래부품 계열 · 물류 / 운영 / 재고 / 납기 관리</div>
+        <div class="work-sub">8년 9개월 · 입고/출고/재고/납기/구매/거래처 커뮤니케이션</div>
+        <ul class="compact-list">
+          <li>소규모 인력 환경에서 업무 우선순위 조정 및 팀장 대행 경험</li>
+          <li>운영 현장에서 익힌 흐름·병목·검수 감각을 AI 서비스 설계 관점으로 확장</li>
+        </ul>
+      </section>
+
+      <div class="footer-note">
+        상세 프로젝트 설명은 GitHub Profile README와 RESUME.md에서 확인할 수 있습니다.
+      </div>
+    </main>
+  </div>
+</body>
+</html>
