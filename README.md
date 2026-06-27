@@ -18,7 +18,7 @@
 ## Resume
 
 - [Web Resume](https://mosejong.github.io/mosejong/resume.html)
-- [PDF Resume](./assets/모세종_Resume.pdf)
+- [PDF Resume](./assets/모세종.pdf)
 
 ---
 
@@ -274,5 +274,5 @@ Context Capsule은 AI가 마음대로 코드를 수정하게 만드는 도구가
 
 - GitHub: [github.com/mosejong](https://github.com/mosejong)
 - Web Resume: [resume.html](https://mosejong.github.io/mosejong/resume.html)
-- PDF Resume: [모세종_Resume.pdf](./assets/모세종_Resume.pdf)
+- PDF Resume: [모세종.pdf](./assets/모세종.pdf)
 - Portfolio: 준비 중
