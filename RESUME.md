@@ -58,16 +58,16 @@
 
 ## Projects
 
-## 1. SchoolBridge
+### 1. SchoolBridge
 
 **다문화 가정통신문 AI 도우미**  
 Repository: [github.com/Maxmunzy/multicultural-ai](https://github.com/Maxmunzy/multicultural-ai)
 
-### Summary
+#### Summary
 
 다문화가정 학부모가 한국어 가정통신문에서 날짜, 준비물, 비용, 제출 여부 같은 핵심 정보를 놓치지 않도록 돕는 AI 번역·요약·TTS 서비스입니다.
 
-### My Role
+#### My Role
 
 - 번역/TTS 파이프라인 설계 및 구현
 - NLLB 기반 8개 언어 번역 실험
@@ -76,7 +76,7 @@ Repository: [github.com/Maxmunzy/multicultural-ai](https://github.com/Maxmunzy/m
 - Edge-TTS 기반 음성 출력 실험
 - 번역 품질 검수 루프, 실험 문서, 발표 흐름 정리
 
-### Design Intention
+#### Design Intention
 
 이 프로젝트에서 가장 중요하게 본 것은 “다문화가정 학부모에게 실제로 도움이 되는 구조인가”였습니다.  
 가정통신문은 문장 전체를 자연스럽게 번역하는 것보다, 학부모가 해야 할 일을 정확히 이해하는 것이 더 중요하다고 판단했습니다.
@@ -94,7 +94,7 @@ Repository: [github.com/Maxmunzy/multicultural-ai](https://github.com/Maxmunzy/m
 실제 서비스 적용 시에는 라이선스 문제가 없는 모델로 교체해야 한다고 판단하고 있습니다.  
 다만 모델이 바뀌더라도 글로사리와 템플릿 기반 보정 구조는 유지 가능하므로, 번역 품질 개선과 운영 비용 절감 측면에서 확장 가능한 설계라고 보고 있습니다.
 
-### Result
+#### Result
 
 - 한국어 가정통신문 → 할 일 추출 → 카테고리 분류 → 다국어 번역 → TTS → 체크리스트 흐름 구현
 - 베트남어, 영어, 러시아어, 말레이시아어, 몽골어, 중국어, 태국어, 일본어 번역 지원
@@ -102,22 +102,22 @@ Repository: [github.com/Maxmunzy/multicultural-ai](https://github.com/Maxmunzy/m
 - backend pytest 27개와 GitHub Actions 기반 PR 게이트 구성
 - Android 실기기 기반 E2E 파이프라인 검증
 
-### Tech
+#### Tech
 
 `Python` · `FastAPI` · `Transformers` · `facebook/nllb-200-distilled-600M` · `Pandas` · `CSV` · `Edge-TTS` · `Docker` · `Android`
 
 ---
 
-## 2. Rainbow Bridge
+### 2. Rainbow Bridge
 
 **펫로스 애프터케어 AI 서비스**  
 Repository: [github.com/mosejong/Rainbow-Bridge](https://github.com/mosejong/Rainbow-Bridge)
 
-### Summary
+#### Summary
 
 펫로스를 겪는 보호자를 대상으로 감정 체크인, 미션, 추모 메시지, TTS/영상 생성 흐름을 제공하는 AI 애프터케어 서비스입니다.
 
-### My Role
+#### My Role
 
 - Team Lead / PM
 - 서비스 흐름 설계 및 발표 구조 정리
@@ -129,7 +129,7 @@ Repository: [github.com/mosejong/Rainbow-Bridge](https://github.com/mosejong/Rai
 - GPU 터널링 및 외부 AI 기능 연동 경험
 - 안전 라우팅, 평가 리포트, 제출 산출물 정리
 
-### Contribution
+#### Contribution
 
 Rainbow Bridge는 제가 모든 기술 파트를 깊게 구현한 프로젝트라기보다, 팀장/PM으로서 여러 파트가 하나의 사용자 흐름으로 연결되도록 조율한 프로젝트입니다.
 
@@ -138,7 +138,7 @@ AI 서비스는 모델 하나만 잘 붙인다고 완성되지 않았습니다.
 
 이 프로젝트를 통해 기능 구현뿐 아니라 협업 구조, 우선순위 조정, 배포 환경, 실서버 운영, 문서화의 중요성을 경험했습니다.
 
-### Result
+#### Result
 
 - 3주 프로토타입 기간 내 핵심 사용자 흐름 구현
 - 감정 체크인, 기억 기반 추모 메시지, TTS, 미션, 타임라인, 회복 리포트 구현
@@ -146,23 +146,23 @@ AI 서비스는 모델 하나만 잘 붙인다고 완성되지 않았습니다.
 - NCP 기반 실서버 배포 및 Android 시연 경험
 - README, 평가 리포트, 호출 로그, 팀 회고 등 제출 산출물 정리
 
-### Tech
+#### Tech
 
 `FastAPI` · `MongoDB` · `SQLite` · `Redis` · `Gemini API` · `TTS` · `LivePortrait` · `FFmpeg` · `Docker` · `NCP` · `nginx` · `GitHub Actions`
 
 ---
 
-## 3. Context Capsule
+### 3. Context Capsule
 
 **AI 작업 인수인계 도구**  
 Repository: [github.com/mosejong/context-capsule](https://github.com/mosejong/context-capsule)
 
-### Summary
+#### Summary
 
 팀 프로젝트와 AI 협업 과정에서 직접 느낀 문제를 바탕으로 만든 개인 프로젝트입니다.  
 레포지토리와 작업 요청을 분석해 AI나 팀원에게 넘길 수 있는 작업 브리프를 생성하는 도구입니다.
 
-### Why I Built This
+#### Why I Built This
 
 AI에게 작업을 맡길 때 가장 큰 문제는 모델 성능만이 아니었습니다.  
 필요한 컨텍스트를 얼마나 정확하고 적게 전달하느냐가 결과 품질에 큰 영향을 준다고 느꼈습니다.
@@ -172,7 +172,7 @@ AI에게 작업을 맡길 때 가장 큰 문제는 모델 성능만이 아니었
 
 Context Capsule은 이 문제를 줄이기 위해 만든 도구입니다.
 
-### Core Features
+#### Core Features
 
 - 레포지토리 구조 분석
 - 작업 요청 기반 관련 파일 추천
@@ -184,14 +184,14 @@ Context Capsule은 이 문제를 줄이기 위해 만든 도구입니다.
 - 토큰 사용량 절감 추정
 - Streamlit 대시보드 / CLI / Windows 실행 지원
 
-### Direction
+#### Direction
 
 Context Capsule은 AI가 마음대로 코드를 수정하게 만드는 도구가 아닙니다.  
 제가 중요하게 보는 방향은 **AI가 제안하고, 사람이 검토하고, 승인하는 구조**입니다.
 
 즉, AI 작업을 완전 자동화하기보다 사람이 통제 가능한 형태로 AI에게 일을 넘겨주는 도구를 목표로 하고 있습니다.
 
-### Tech
+#### Tech
 
 `Python` · `Streamlit` · `CLI` · `GitHub Issue Workflow` · `RAG-like Retrieval` · `Token Budgeting` · `Windows Launcher`
 
@@ -199,7 +199,7 @@ Context Capsule은 AI가 마음대로 코드를 수정하게 만드는 도구가
 
 ## Additional Project
 
-## procurement-logistics-ai
+### procurement-logistics-ai
 
 **공공조달 기반 창업·입지 분석 프로젝트**  
 Repository: [github.com/mosejong/procurement-logistics-ai](https://github.com/mosejong/procurement-logistics-ai)
@@ -218,12 +218,12 @@ Repository: [github.com/mosejong/procurement-logistics-ai](https://github.com/mo
 
 ## Work Experience
 
-## 미래부품 계열
+### 미래부품 계열
 
 **물류 / 운영 / 재고 / 납기 관리**  
 경력: 8년 9개월
 
-### Main Responsibilities
+#### Main Responsibilities
 
 - 입고, 출고, 재고, 납기 관리
 - 구매 업무 및 거래처 커뮤니케이션
@@ -232,7 +232,7 @@ Repository: [github.com/mosejong/procurement-logistics-ai](https://github.com/mo
 - 팀장 대행 및 현장 실무 조율 경험
 - 의사결정권자 및 주요 거래처 담당자와 직접 커뮤니케이션
 
-### Transferable Strengths
+#### Transferable Strengths
 
 - 업무 흐름과 병목을 빠르게 파악하는 능력
 - 납기와 품질 기준을 지키기 위한 검수 감각
@@ -243,7 +243,7 @@ Repository: [github.com/mosejong/procurement-logistics-ai](https://github.com/mo
 
 ## Education
 
-## AI Human 국비교육과정
+### AI Human 국비교육과정
 
 - Python, 데이터 처리, AI 기초 학습
 - FastAPI 기반 백엔드 API 개발 경험
