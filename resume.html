@@ -5,400 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>모세종 Resume</title>
   <style>
-    :root {
-      --ink: #172033;
-      --muted: #667085;
-      --line: #d9e2ee;
-      --paper: #ffffff;
-      --bg: #eef1f6;
-      --navy: #131d2f;
-      --blue: #2f6feb;
-      --sky: #eaf2ff;
-      --soft: #f7f9fc;
-      --green: #0f8a5f;
-      --orange: #c96b18;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", Arial, sans-serif;
-      line-height: 1.4;
-    }
-
-    .page {
-      width: 210mm;
-      min-height: 297mm;
-      margin: 22px auto;
-      background: var(--paper);
-      box-shadow: 0 16px 42px rgba(18, 28, 45, 0.16);
-      display: grid;
-      grid-template-columns: 66mm 1fr;
-      overflow: hidden;
-    }
-
-    aside {
-      background: var(--navy);
-      color: #fff;
-      padding: 25px 21px;
-    }
-
-    main {
-      padding: 25px 28px 22px;
-    }
-
-    .photo {
-      width: 96px;
-      height: 96px;
-      border-radius: 24px;
-      border: 3px solid rgba(255,255,255,0.26);
-      overflow: hidden;
-      margin-bottom: 16px;
-      background: linear-gradient(135deg, rgba(255,255,255,0.20), rgba(255,255,255,0.06));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .photo-initials {
-      font-size: 31px;
-      font-weight: 850;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-    }
-
-    .name {
-      font-size: 32px;
-      font-weight: 850;
-      letter-spacing: -0.05em;
-      margin: 0 0 5px;
-    }
-
-    .role {
-      font-size: 12.5px;
-      font-weight: 750;
-      color: #a9c7ff;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      line-height: 1.35;
-      margin-bottom: 16px;
-    }
-
-    h2 {
-      font-size: 12.5px;
-      margin: 19px 0 9px;
-      color: #111827;
-      letter-spacing: -0.02em;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    h2::before {
-      content: "";
-      width: 6px;
-      height: 17px;
-      border-radius: 999px;
-      background: var(--blue);
-      display: inline-block;
-    }
-
-    aside h2 { color: #fff; }
-    aside h2::before { background: #8db5ff; }
-
-    .side-block { margin-bottom: 16px; }
-
-    .contact a,
-    .contact div {
-      color: #e7ecf8;
-      text-decoration: none;
-      font-size: 11.2px;
-      display: block;
-      margin: 6px 0;
-      word-break: break-all;
-    }
-
-    .summary {
-      color: #dce6f8;
-      font-size: 11.5px;
-      margin: 0;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 5px;
-      margin-top: 8px;
-    }
-
-    .tag {
-      font-size: 10.4px;
-      background: rgba(255,255,255,0.11);
-      border: 1px solid rgba(255,255,255,0.16);
-      color: #eef4ff;
-      padding: 3.5px 6.5px;
-      border-radius: 999px;
-      white-space: nowrap;
-    }
-
-    .light-tag {
-      background: #eef5ff;
-      color: #1f4fa3;
-      border-color: #d8e6ff;
-    }
-
-    .principles {
-      padding-left: 16px;
-      margin: 8px 0 0;
-      color: #dce6f8;
-      font-size: 11.2px;
-    }
-
-    .principles li { margin: 5px 0; }
-
-    .hero {
-      background: linear-gradient(135deg, #f7faff 0%, #eaf2ff 100%);
-      border: 1px solid #d6e6ff;
-      border-radius: 17px;
-      padding: 15px 17px;
-      margin-bottom: 12px;
-    }
-
-    .headline {
-      font-size: 20px;
-      font-weight: 850;
-      letter-spacing: -0.05em;
-      margin: 0 0 7px;
-      color: #14213d;
-    }
-
-    .hero p {
-      margin: 0;
-      font-size: 12.2px;
-      color: #344057;
-    }
-
-    .metrics {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 7px;
-      margin: 10px 0 14px;
-    }
-
-    .metric {
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 9px;
-      background: #fff;
-    }
-
-    .metric strong {
-      display: block;
-      font-size: 18px;
-      color: var(--blue);
-      line-height: 1;
-      margin-bottom: 4px;
-      letter-spacing: -0.03em;
-    }
-
-    .metric span {
-      font-size: 10.2px;
-      color: var(--muted);
-    }
-
-    .flow {
-      display: grid;
-      grid-template-columns: 1fr 14px 1fr 14px 1fr;
-      align-items: center;
-      gap: 5px;
-      margin: 9px 0 14px;
-    }
-
-    .flow-card {
-      border: 1px solid var(--line);
-      background: var(--soft);
-      border-radius: 13px;
-      padding: 9px;
-      min-height: 58px;
-    }
-
-    .flow-card b {
-      display: block;
-      font-size: 11.7px;
-      margin-bottom: 4px;
-      color: #18212f;
-    }
-
-    .flow-card span {
-      color: var(--muted);
-      font-size: 10.2px;
-    }
-
-    .arrow {
-      color: var(--blue);
-      font-weight: 850;
-      text-align: center;
-    }
-
-    .project {
-      border: 1px solid var(--line);
-      border-radius: 15px;
-      padding: 12px 13px;
-      margin-top: 10px;
-      background: #fff;
-    }
-
-    .project-head {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      align-items: baseline;
-      margin-bottom: 7px;
-    }
-
-    .project-title {
-      font-size: 15px;
-      font-weight: 850;
-      letter-spacing: -0.03em;
-      color: #101828;
-    }
-
-    .project-sub {
-      font-size: 10.5px;
-      color: var(--blue);
-      font-weight: 750;
-      white-space: nowrap;
-    }
-
-    .story-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 7px;
-      margin-top: 6px;
-    }
-
-    .story {
-      background: var(--soft);
-      border: 1px solid #e7edf6;
-      border-radius: 11px;
-      padding: 8px;
-      min-height: 76px;
-    }
-
-    .story b {
-      display: block;
-      font-size: 10.7px;
-      margin-bottom: 4px;
-      color: #111827;
-    }
-
-    .story span {
-      display: block;
-      font-size: 10.3px;
-      color: #445066;
-    }
-
-    .impact-line {
-      display: flex;
-      gap: 6px;
-      flex-wrap: wrap;
-      margin-top: 8px;
-    }
-
-    .impact {
-      flex: 1 1 auto;
-      min-width: 90px;
-      background: #f8fbff;
-      border: 1px solid #dce8ff;
-      border-radius: 10px;
-      padding: 6px 7px;
-    }
-
-    .impact strong {
-      display: block;
-      color: var(--blue);
-      font-size: 14px;
-      line-height: 1;
-      margin-bottom: 3px;
-      letter-spacing: -0.03em;
-    }
-
-    .impact span {
-      display: block;
-      color: var(--muted);
-      font-size: 9.8px;
-    }
-
-    .work {
-      background: #fbfcff;
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 10px 12px;
-      margin-top: 9px;
-    }
-
-    .work-title {
-      font-weight: 850;
-      font-size: 13px;
-      color: #101828;
-    }
-
-    .work-sub {
-      font-size: 10.7px;
-      color: var(--muted);
-      margin-top: 2px;
-    }
-
-    ul {
-      margin: 6px 0 0;
-      padding-left: 16px;
-    }
-
-    li {
-      font-size: 10.8px;
-      color: #374151;
-      margin: 3px 0;
-    }
-
-    .footer-note {
-      margin-top: 12px;
-      padding-top: 9px;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 10.3px;
-    }
-
-    @media print {
-      body { background: #fff; }
-      .page {
-        width: 210mm;
-        min-height: 297mm;
-        margin: 0;
-        box-shadow: none;
-      }
-      @page { size: A4; margin: 0; }
-    }
+    :root{--ink:#172033;--muted:#667085;--line:#d9e2ee;--paper:#fff;--bg:#eef1f6;--navy:#131d2f;--blue:#2f6feb;--soft:#f7f9fc;--tag:#eef5ff}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Pretendard","Apple SD Gothic Neo","Noto Sans KR",Arial,sans-serif;line-height:1.38} a{color:inherit}.page{width:210mm;min-height:297mm;margin:22px auto;background:var(--paper);box-shadow:0 16px 42px rgba(18,28,45,.16);display:grid;grid-template-columns:66mm 1fr;overflow:hidden} aside{background:var(--navy);color:#fff;padding:25px 21px} main{padding:25px 28px 22px}.photo{width:96px;height:96px;border-radius:24px;border:3px solid rgba(255,255,255,.26);margin-bottom:16px;background:linear-gradient(135deg,rgba(255,255,255,.2),rgba(255,255,255,.06));display:flex;align-items:center;justify-content:center}.photo-initials{font-size:31px;font-weight:850;letter-spacing:-.04em}.name{font-size:32px;font-weight:850;letter-spacing:-.05em;margin:0 0 5px}.role{font-size:12.5px;font-weight:750;color:#a9c7ff;text-transform:uppercase;letter-spacing:.05em;line-height:1.35;margin-bottom:16px}h2{font-size:12.5px;margin:18px 0 9px;color:#111827;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}h2:before{content:"";width:6px;height:17px;border-radius:999px;background:var(--blue);display:inline-block}aside h2{color:#fff}aside h2:before{background:#8db5ff}.side-block{margin-bottom:15px}.contact a,.contact div{color:#e7ecf8;text-decoration:none;font-size:11.2px;display:block;margin:6px 0;word-break:break-all}.summary{color:#dce6f8;font-size:11.5px;margin:0}.tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:8px}.tag{font-size:10.4px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.16);color:#eef4ff;padding:3.5px 6.5px;border-radius:999px;white-space:nowrap}.light-tag{background:var(--tag);color:#1f4fa3;border-color:#d8e6ff}.principles{padding-left:16px;margin:8px 0 0;color:#dce6f8;font-size:11.2px}.principles li{margin:5px 0}.hero{background:linear-gradient(135deg,#f7faff 0%,#eaf2ff 100%);border:1px solid #d6e6ff;border-radius:17px;padding:15px 17px;margin-bottom:12px}.headline{font-size:20px;font-weight:850;letter-spacing:-.05em;margin:0 0 7px;color:#14213d}.hero p{margin:0;font-size:12.2px;color:#344057}.top-badges{display:flex;gap:7px;flex-wrap:wrap;margin:10px 0 13px}.top-badge{border:1px solid #d6e6ff;background:#f8fbff;border-radius:999px;padding:6px 9px;font-size:10.7px;color:#334155}.top-badge b{color:var(--blue)}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:10px 0 14px}.metric{border:1px solid var(--line);border-radius:12px;padding:9px;background:#fff}.metric strong{display:block;font-size:18px;color:var(--blue);line-height:1;margin-bottom:4px;letter-spacing:-.03em}.metric span{font-size:10.2px;color:var(--muted)}.flow{display:grid;grid-template-columns:1fr 14px 1fr 14px 1fr;align-items:center;gap:5px;margin:9px 0 14px}.flow-card{border:1px solid var(--line);background:var(--soft);border-radius:13px;padding:9px;min-height:58px}.flow-card b{display:block;font-size:11.7px;margin-bottom:4px;color:#18212f}.flow-card span{color:var(--muted);font-size:10.2px}.arrow{color:var(--blue);font-weight:850;text-align:center}.project{border:1px solid var(--line);border-radius:15px;padding:12px 13px;margin-top:10px;background:#fff}.project-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;margin-bottom:7px}.project-title{font-size:15px;font-weight:850;letter-spacing:-.03em;color:#101828}.project-title a{text-decoration:none}.project-title a:hover{color:var(--blue);text-decoration:underline}.project-sub{font-size:10.5px;color:var(--blue);font-weight:750;white-space:nowrap;text-align:right}.repo-link{display:inline-flex;align-items:center;margin-left:6px;padding:3px 7px;border-radius:999px;border:1px solid #cfe0ff;background:#eef5ff;color:#1f4fa3;font-size:9.8px;font-weight:800;text-decoration:none;white-space:nowrap}.period{display:inline-block;margin-top:4px;padding:3px 7px;border-radius:999px;background:#f3f6fb;border:1px solid #e1e8f2;color:#5b6678;font-size:10px;font-weight:700}.story-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-top:6px}.story{background:var(--soft);border:1px solid #e7edf6;border-radius:11px;padding:8px;min-height:76px}.story b{display:block;font-size:10.7px;margin-bottom:4px;color:#111827}.story span{display:block;font-size:10.3px;color:#445066}.impact-line{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}.impact{flex:1 1 auto;min-width:90px;background:#f8fbff;border:1px solid #dce8ff;border-radius:10px;padding:6px 7px}.impact strong{display:block;color:var(--blue);font-size:14px;line-height:1;margin-bottom:3px;letter-spacing:-.03em}.impact span{display:block;color:var(--muted);font-size:9.8px}.work{background:#fbfcff;border:1px solid var(--line);border-radius:14px;padding:10px 12px;margin-top:9px}.work-title{font-weight:850;font-size:13px;color:#101828}.work-sub{font-size:10.7px;color:var(--muted);margin-top:2px}ul{margin:6px 0 0;padding-left:16px}li{font-size:10.8px;color:#374151;margin:3px 0}.footer-note{margin-top:12px;padding-top:9px;border-top:1px solid var(--line);color:var(--muted);font-size:10.3px}@media print{body{background:#fff}.page{width:210mm;min-height:297mm;margin:0;box-shadow:none}@page{size:A4;margin:0}}
   </style>
 </head>
 <body>
   <div class="page">
     <aside>
-      <div class="photo" aria-label="프로필 사진 자리">
-        <div class="photo-initials">MS</div>
-      </div>
-      <!--
-        개인정보 보호용 기본값은 이니셜입니다.
-        로컬 PC에서만 사진을 넣고 PDF로 저장하려면 위 photo 영역을 아래처럼 바꾸면 됩니다.
-        <div class="photo"><img src="./profile.jpg" alt="모세종 프로필 사진" /></div>
-        이때 profile.jpg는 GitHub에 올리지 말고, resume.html과 같은 폴더에만 두세요.
-      -->
-
+      <div class="photo" aria-label="프로필 사진 자리"><div class="photo-initials">MS</div></div>
+      <!-- 개인정보 보호용 기본값은 이니셜입니다. 로컬에서만 사진을 넣고 PDF 저장하려면 이 영역을 <div class="photo"><img src="./profile.jpg" alt="모세종 프로필 사진" /></div> 로 바꾸고 profile.jpg는 GitHub에 올리지 마세요. -->
       <h1 class="name">모세종</h1>
       <div class="role">AI Service Builder<br/>Backend-oriented Junior Developer</div>
-
       <section class="side-block contact">
         <h2>Contact</h2>
         <a href="https://github.com/mosejong">github.com/mosejong</a>
@@ -406,154 +23,62 @@
         <a href="https://github.com/mosejong/context-capsule">Context Capsule</a>
         <div>Seoul, South Korea</div>
       </section>
-
       <section class="side-block">
         <h2>Profile</h2>
-        <p class="summary">
-          물류·운영 현장 경험 8년 9개월을 바탕으로 사용자 문제와 서비스 제약을 함께 고려하는 AI 서비스 개발자를 지향합니다.
-          AI 기능을 단순 호출이 아니라 실제 사용자가 이해하고 행동할 수 있는 서비스 흐름으로 연결하는 데 관심이 있습니다.
-        </p>
+        <p class="summary">물류·운영 현장 경험 8년 9개월을 바탕으로 사용자 문제와 서비스 제약을 함께 고려하는 AI 서비스 개발자를 지향합니다. AI 기능을 단순 호출이 아니라 실제 사용자가 이해하고 행동할 수 있는 서비스 흐름으로 연결하는 데 관심이 있습니다.</p>
       </section>
-
       <section class="side-block">
         <h2>Core Skills</h2>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">FastAPI</span>
-          <span class="tag">REST API</span>
-          <span class="tag">MongoDB</span>
-          <span class="tag">SQLite</span>
-          <span class="tag">Docker</span>
-          <span class="tag">NCP</span>
-          <span class="tag">nginx</span>
-          <span class="tag">GitHub Actions</span>
-          <span class="tag">LLM API</span>
-          <span class="tag">Prompt Engineering</span>
-          <span class="tag">Translation Model</span>
-          <span class="tag">Glossary</span>
-          <span class="tag">TTS</span>
-          <span class="tag">Streamlit</span>
-        </div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">REST API</span><span class="tag">MongoDB</span><span class="tag">SQLite</span><span class="tag">Docker</span><span class="tag">NCP</span><span class="tag">nginx</span><span class="tag">GitHub Actions</span><span class="tag">LLM API</span><span class="tag">Prompt Engineering</span><span class="tag">Translation Model</span><span class="tag">Glossary</span><span class="tag">TTS</span><span class="tag">Streamlit</span></div>
       </section>
-
       <section class="side-block">
         <h2>Working Principles</h2>
-        <ul class="principles">
-          <li>AI 출력은 검증해야 할 중간 산출물로 봅니다.</li>
-          <li>사용자 상황, 비용 구조, 운영 제약을 함께 봅니다.</li>
-          <li>AI가 제안하고 사람이 검토·승인하는 구조를 선호합니다.</li>
-        </ul>
+        <ul class="principles"><li>AI 출력은 검증해야 할 중간 산출물로 봅니다.</li><li>사용자 상황, 비용 구조, 운영 제약을 함께 봅니다.</li><li>AI가 제안하고 사람이 검토·승인하는 구조를 선호합니다.</li></ul>
       </section>
-
       <section class="side-block">
         <h2>Education</h2>
-        <p class="summary">
-          AI Human 국비교육과정<br/>
-          Python, FastAPI, LLM API, 번역 모델, TTS 기반 AI 서비스 프로젝트 수행
-        </p>
+        <p class="summary"><b>KDT AI Human 4기</b><br/>이스트캠프 · 2026.03 ~ 2026.07 수료 예정<br/>Python, FastAPI, LLM API, 번역 모델, TTS 기반 AI 서비스 프로젝트 수행</p>
       </section>
     </aside>
-
     <main>
       <section class="hero">
         <div class="headline">문제를 서비스 흐름으로 바꾸고, 결과를 숫자로 검증하는 개발자</div>
-        <p>
-          8년 9개월의 물류·운영 경험을 바탕으로 흐름, 병목, 검수 관점에서 문제를 봅니다.
-          AI 국비교육과정에서 SchoolBridge와 Rainbow Bridge를 수행하며 번역 품질 보정, 안전 라우팅, 실서버 운영을 경험했고,
-          그 과정에서 반복적으로 겪은 AI 작업 인수인계 문제를 Context Capsule 개인 프로젝트로 확장했습니다.
-        </p>
+        <p>8년 9개월의 물류·운영 경험을 바탕으로 흐름, 병목, 검수 관점에서 문제를 봅니다. KDT AI Human 과정에서 SchoolBridge와 Rainbow Bridge를 수행하며 번역 품질 보정, 안전 라우팅, 실서버 운영을 경험했고, 그 과정에서 반복적으로 겪은 AI 작업 인수인계 문제를 Context Capsule 개인 프로젝트로 확장했습니다.</p>
       </section>
-
+      <section class="top-badges">
+        <div class="top-badge"><b>KDT AI Human</b> · 이스트캠프 · 2026.03 ~ 2026.07 수료 예정</div>
+        <div class="top-badge"><b>SchoolBridge</b> · 2026.04.24 ~ 2026.05.13</div>
+        <div class="top-badge"><b>Rainbow Bridge</b> · 2026.06.02 ~ 2026.06.19</div>
+      </section>
       <section class="metrics">
         <div class="metric"><strong>8y 9m</strong><span>운영 현장 경험</span></div>
         <div class="metric"><strong>39→89.6</strong><span>SchoolBridge 번역 품질 개선</span></div>
         <div class="metric"><strong>3 weeks</strong><span>Rainbow Bridge 실서버 시연</span></div>
         <div class="metric"><strong>125 pass</strong><span>Context Capsule 테스트</span></div>
       </section>
-
-      <section class="flow">
-        <div class="flow-card"><b>Problem</b><span>현장·팀 프로젝트에서 반복되는 병목 발견</span></div>
-        <div class="arrow">→</div>
-        <div class="flow-card"><b>Design</b><span>글로사리, 안전 라우팅, 인수인계 구조 설계</span></div>
-        <div class="arrow">→</div>
-        <div class="flow-card"><b>Impact</b><span>품질 점수, 테스트, 시연 결과로 검증</span></div>
-      </section>
-
+      <section class="flow"><div class="flow-card"><b>Problem</b><span>현장·팀 프로젝트에서 반복되는 병목 발견</span></div><div class="arrow">→</div><div class="flow-card"><b>Design</b><span>글로사리, 안전 라우팅, 인수인계 구조 설계</span></div><div class="arrow">→</div><div class="flow-card"><b>Impact</b><span>품질 점수, 테스트, 시연 결과로 검증</span></div></section>
       <h2>Project Highlights</h2>
-
       <article class="project">
-        <div class="project-head">
-          <div class="project-title">SchoolBridge</div>
-          <div class="project-sub">번역 품질 개선 · TTS</div>
-        </div>
-        <div class="story-grid">
-          <div class="story"><b>문제</b><span>다문화가정 학부모에게 가정통신문은 단순 번역보다 날짜·준비물·비용·제출 여부 보존이 중요했습니다.</span></div>
-          <div class="story"><b>개선</b><span>유료 API 의존도를 낮추기 위해 무료/로컬 번역 모델을 검토하고, 학교 용어 글로사리와 템플릿 보정 구조를 설계했습니다.</span></div>
-          <div class="story"><b>결과</b><span>8개 언어 번역/TTS 흐름과 Android E2E 검증을 완료했고, 용어사전 적용 후 품질 점수가 크게 개선됐습니다.</span></div>
-        </div>
-        <div class="impact-line">
-          <div class="impact"><strong>39.0 → 89.6</strong><span>용어사전 적용 전후 품질 점수</span></div>
-          <div class="impact"><strong>8 languages</strong><span>다국어 번역 지원</span></div>
-          <div class="impact"><strong>27 tests</strong><span>backend pytest / PR gate</span></div>
-        </div>
-        <div class="tags">
-          <span class="tag light-tag">FastAPI</span><span class="tag light-tag">NLLB</span><span class="tag light-tag">Glossary</span><span class="tag light-tag">Edge-TTS</span><span class="tag light-tag">Docker</span>
-        </div>
+        <div class="project-head"><div><div class="project-title"><a href="https://github.com/Maxmunzy/multicultural-ai" target="_blank" rel="noopener noreferrer">SchoolBridge</a><a class="repo-link" href="https://github.com/Maxmunzy/multicultural-ai" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a></div><span class="period">2026.04.24 ~ 2026.05.13</span></div><div class="project-sub">번역 품질 개선 · TTS</div></div>
+        <div class="story-grid"><div class="story"><b>문제</b><span>다문화가정 학부모에게 가정통신문은 단순 번역보다 날짜·준비물·비용·제출 여부 보존이 중요했습니다.</span></div><div class="story"><b>개선</b><span>유료 API 의존도를 낮추기 위해 무료/로컬 번역 모델을 검토하고, 학교 용어 글로사리와 템플릿 보정 구조를 설계했습니다.</span></div><div class="story"><b>결과</b><span>8개 언어 번역/TTS 흐름과 Android E2E 검증을 완료했고, 용어사전 적용 후 품질 점수가 크게 개선됐습니다.</span></div></div>
+        <div class="impact-line"><div class="impact"><strong>39.0 → 89.6</strong><span>용어사전 적용 전후 품질 점수</span></div><div class="impact"><strong>8 languages</strong><span>다국어 번역 지원</span></div><div class="impact"><strong>27 tests</strong><span>backend pytest / PR gate</span></div></div>
+        <div class="tags"><span class="tag light-tag">FastAPI</span><span class="tag light-tag">NLLB</span><span class="tag light-tag">Glossary</span><span class="tag light-tag">Edge-TTS</span><span class="tag light-tag">Docker</span></div>
       </article>
-
       <article class="project">
-        <div class="project-head">
-          <div class="project-title">Rainbow Bridge</div>
-          <div class="project-sub">Team Lead · 실서버 운영</div>
-        </div>
-        <div class="story-grid">
-          <div class="story"><b>문제</b><span>AI·프론트엔드·백엔드·멀티미디어 기능이 따로 구현되면 실제 사용자 흐름으로 연결되기 어려웠습니다.</span></div>
-          <div class="story"><b>개선</b><span>팀장/PM으로 역할과 우선순위를 정리하고, NCP·Docker·nginx/HTTPS 기반 테스트 환경을 먼저 구성했습니다.</span></div>
-          <div class="story"><b>결과</b><span>감정 체크인, 미션, 추모 메시지, TTS/영상 생성, 안전 라우팅을 하나의 시연 흐름으로 연결했습니다.</span></div>
-        </div>
-        <div class="impact-line">
-          <div class="impact"><strong>3 weeks</strong><span>프로토타입 핵심 흐름 구현</span></div>
-          <div class="impact"><strong>L2+</strong><span>위기 감지 시 생성 차단</span></div>
-          <div class="impact"><strong>NCP</strong><span>실서버 배포 / Android 시연</span></div>
-        </div>
-        <div class="tags">
-          <span class="tag light-tag">FastAPI</span><span class="tag light-tag">MongoDB</span><span class="tag light-tag">NCP</span><span class="tag light-tag">Docker</span><span class="tag light-tag">TTS</span>
-        </div>
+        <div class="project-head"><div><div class="project-title"><a href="https://github.com/mosejong/Rainbow-Bridge" target="_blank" rel="noopener noreferrer">Rainbow Bridge</a><a class="repo-link" href="https://github.com/mosejong/Rainbow-Bridge" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a></div><span class="period">2026.06.02 ~ 2026.06.19</span></div><div class="project-sub">Team Lead · 실서버 운영</div></div>
+        <div class="story-grid"><div class="story"><b>문제</b><span>AI·프론트엔드·백엔드·멀티미디어 기능이 따로 구현되면 실제 사용자 흐름으로 연결되기 어려웠습니다.</span></div><div class="story"><b>개선</b><span>팀장/PM으로 역할과 우선순위를 정리하고, NCP·Docker·nginx/HTTPS 기반 테스트 환경을 먼저 구성했습니다.</span></div><div class="story"><b>결과</b><span>감정 체크인, 미션, 추모 메시지, TTS/영상 생성, 안전 라우팅을 하나의 시연 흐름으로 연결했습니다.</span></div></div>
+        <div class="impact-line"><div class="impact"><strong>3 weeks</strong><span>프로토타입 핵심 흐름 구현</span></div><div class="impact"><strong>L2+</strong><span>위기 감지 시 생성 차단</span></div><div class="impact"><strong>NCP</strong><span>실서버 배포 / Android 시연</span></div></div>
+        <div class="tags"><span class="tag light-tag">FastAPI</span><span class="tag light-tag">MongoDB</span><span class="tag light-tag">NCP</span><span class="tag light-tag">Docker</span><span class="tag light-tag">TTS</span></div>
       </article>
-
       <article class="project">
-        <div class="project-head">
-          <div class="project-title">Context Capsule</div>
-          <div class="project-sub">Personal Product · AI Handoff</div>
-        </div>
-        <div class="story-grid">
-          <div class="story"><b>문제</b><span>AI에게 레포 전체를 넘기면 토큰이 낭비되고, 필요한 파일을 놓치면 잘못된 작업 방향으로 흐를 수 있었습니다.</span></div>
-          <div class="story"><b>개선</b><span>작업 요청 기반 관련 파일 추천, 작업 브리프, 리스크, GitHub Issue Packet을 생성하는 로컬 우선 도구로 설계했습니다.</span></div>
-          <div class="story"><b>결과</b><span>Streamlit/CLI/Windows 실행 흐름을 만들고, 회귀 테스트와 사용자 발화 검증으로 안정성을 확인했습니다.</span></div>
-        </div>
-        <div class="impact-line">
-          <div class="impact"><strong>125 pass</strong><span>pytest 통과</span></div>
-          <div class="impact"><strong>73 PASS</strong><span>user speech validation</span></div>
-          <div class="impact"><strong>61/61</strong><span>hit@3 관련 파일 검색</span></div>
-        </div>
-        <div class="tags">
-          <span class="tag light-tag">Python</span><span class="tag light-tag">Streamlit</span><span class="tag light-tag">CLI</span><span class="tag light-tag">Retrieval</span><span class="tag light-tag">Token Budgeting</span>
-        </div>
+        <div class="project-head"><div><div class="project-title"><a href="https://github.com/mosejong/context-capsule" target="_blank" rel="noopener noreferrer">Context Capsule</a><a class="repo-link" href="https://github.com/mosejong/context-capsule" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a></div><span class="period">Personal Project · 2026.06 ~ ongoing</span></div><div class="project-sub">AI Handoff</div></div>
+        <div class="story-grid"><div class="story"><b>문제</b><span>AI에게 레포 전체를 넘기면 토큰이 낭비되고, 필요한 파일을 놓치면 잘못된 작업 방향으로 흐를 수 있었습니다.</span></div><div class="story"><b>개선</b><span>작업 요청 기반 관련 파일 추천, 작업 브리프, 리스크, GitHub Issue Packet을 생성하는 로컬 우선 도구로 설계했습니다.</span></div><div class="story"><b>결과</b><span>Streamlit/CLI/Windows 실행 흐름을 만들고, 회귀 테스트와 사용자 발화 검증으로 안정성을 확인했습니다.</span></div></div>
+        <div class="impact-line"><div class="impact"><strong>125 pass</strong><span>pytest 통과</span></div><div class="impact"><strong>73 PASS</strong><span>user speech validation</span></div><div class="impact"><strong>61/61</strong><span>hit@3 관련 파일 검색</span></div></div>
+        <div class="tags"><span class="tag light-tag">Python</span><span class="tag light-tag">Streamlit</span><span class="tag light-tag">CLI</span><span class="tag light-tag">Retrieval</span><span class="tag light-tag">Token Budgeting</span></div>
       </article>
-
       <h2>Work Experience</h2>
-      <section class="work">
-        <div class="work-title">미래부품 계열 · 물류 / 운영 / 재고 / 납기 관리</div>
-        <div class="work-sub">8년 9개월 · 입고/출고/재고/납기/구매/거래처 커뮤니케이션</div>
-        <ul>
-          <li>소규모 인력 환경에서 업무 우선순위 조정 및 팀장 대행 경험</li>
-          <li>운영 현장에서 익힌 흐름·병목·검수 감각을 AI 서비스 설계 관점으로 확장</li>
-        </ul>
-      </section>
-
-      <div class="footer-note">
-        상세 프로젝트 설명은 GitHub Profile README와 RESUME.md에서 확인할 수 있습니다.
-      </div>
+      <section class="work"><div class="work-title">미래부품 계열 · 물류 / 운영 / 재고 / 납기 관리</div><div class="work-sub">8년 9개월 · 입고/출고/재고/납기/구매/거래처 커뮤니케이션</div><ul><li>소규모 인력 환경에서 업무 우선순위 조정 및 팀장 대행 경험</li><li>운영 현장에서 익힌 흐름·병목·검수 감각을 AI 서비스 설계 관점으로 확장</li></ul></section>
+      <div class="footer-note">프로젝트명과 GitHub Repo 배지는 클릭 가능한 링크입니다. 상세 설명은 GitHub Profile README와 RESUME.md에서 확인할 수 있습니다.</div>
     </main>
   </div>
 </body>
