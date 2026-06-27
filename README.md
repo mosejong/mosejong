@@ -265,5 +265,5 @@ Context Capsule은 AI가 마음대로 코드를 수정하게 만드는 도구가
 ## Contact
 
 - GitHub: [github.com/mosejong](https://github.com/mosejong)
-- Resume: 준비 중
+- Resume: [RESUME.md](./RESUME.md)
 - Portfolio: 준비 중
