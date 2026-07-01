@@ -1,40 +1,44 @@
-# 모세종 | Python/FastAPI 기반 AI Service Builder
+# 모세종 | Python/FastAPI 기반 AI 서비스 개발자
 
-> **Operations-driven AI Service Builder**  
-> 현장 운영 경험을 바탕으로, 실제 사용자 문제를 Python/FastAPI 기반 API와 서비스 흐름으로 구현하는 주니어 개발자입니다.
-
-저는 물류·운영 현장에서 흐름, 병목, 검수, 납기 감각을 익혔습니다.  
-이후 AI 국비교육과정에서 두 번의 실서비스형 팀 프로젝트를 진행하며, AI 서비스는 모델을 붙이는 것만으로 완성되지 않는다는 것을 배웠습니다.
-
-제가 집중하는 방향은 다음과 같습니다.
-
-- 사용자가 처한 상황과 비용 구조를 먼저 이해하는 것
-- Python/FastAPI 기반으로 API, 데이터 흐름, 배포 흐름을 실제 서비스 형태로 연결하는 것
-- AI 모델의 출력을 그대로 믿지 않고, 테스트·문서·검증 결과로 확인하는 것
-- AI가 모든 결정을 대신하는 구조가 아니라, 사람이 검토하고 승인할 수 있는 **Human-in-the-loop** 구조를 만드는 것
+> **AI 기능을 API · 배포 · 검증 · 자동화 흐름으로 연결하는 개발자**  
+> 물류·운영 현장에서 8년 9개월간 실제 업무 흐름을 경험했고, 현재는 Python/FastAPI 기반으로 AI 서비스와 개발 보조 도구를 구현하고 있습니다.
 
 ---
 
-## Resume
+## RESUME
 
-- [Web Resume](https://mosejong.github.io/mosejong/resume.html)
-- [PDF Resume](./assets/모세종.pdf)
+- **Web Resume:** [mosejong.github.io/mosejong/resume.html](https://mosejong.github.io/mosejong/resume.html)
+- **PDF Resume:** [assets/모세종.pdf](./assets/모세종.pdf)
+- **GitHub:** [github.com/mosejong](https://github.com/mosejong)
 
 ---
 
-## Main Narrative
+## 한 줄 소개
 
-### 1. Context Capsule  
-**AI 작업 인수인계 도구**  
-AI에게 레포 전체를 넘길 때 발생하는 토큰 낭비, 작업 범위 혼선, 결과 해석 어려움을 줄이기 위해 만든 개인 프로젝트입니다. v0.2.14까지 릴리즈하며 테스트, 문서, ZIP 배포, GitHub Actions 검증 흐름을 정리했습니다.
+저는 단순히 AI 모델을 호출하는 것보다, AI 기능이 실제 서비스 안에서 **사용자 흐름, API, 데이터, 배포, 검증, 문서화**까지 이어지도록 만드는 데 관심이 있습니다.
 
-### 2. Rainbow Bridge  
-**펫로스 애프터케어 AI 서비스**  
-팀장/PM으로 서비스 흐름, 백엔드 API 통합, 실서버 배포, 협업 문서화를 경험한 프로젝트입니다.
+비전공자로 개발을 시작했지만, 물류·운영 현장에서 쌓은 문제 정의 능력과 팀 프로젝트 경험을 바탕으로 **실제 문제를 동작하는 서비스로 바꾸는 개발자**를 지향합니다.
 
-### 3. SchoolBridge  
-**다문화 가정통신문 AI 도우미**  
-번역·TTS 파이프라인과 학교 도메인 용어 보정 구조를 담당한 1차 팀 프로젝트입니다.
+---
+
+## Main Projects
+
+| Project | Type | Role | Keywords |
+| --- | --- | --- | --- |
+| [Context Capsule](https://github.com/mosejong/context-capsule) | 개인 프로젝트 | Python 개발 / 테스트 / 릴리즈 관리 | AI Handoff, FastAPI, Streamlit, CLI, GitHub Actions |
+| [Rainbow Bridge](https://github.com/mosejong/Rainbow-Bridge) | 6인 팀 프로젝트 | Team Lead / PM / Backend Integration | FastAPI, MongoDB, Docker, NCP, nginx, TTS |
+| [SchoolBridge](https://github.com/Maxmunzy/multicultural-ai) | 5인 팀 프로젝트 | 번역·TTS 파이프라인 | FastAPI, NLLB, Glossary, Edge-TTS, Docker |
+| [procurement-logistics-ai](https://github.com/mosejong/procurement-logistics-ai) | 개인 프로젝트 | 공공데이터 수집·분석 | Python, Pandas, Streamlit, Public Data API |
+
+---
+
+## 핵심 방향
+
+- **Python/FastAPI 기반 API 구현**
+- **LLM API, TTS, 번역, 검색 흐름을 서비스 기능으로 연결**
+- **Docker, nginx, NCP, GitHub Actions 기반 배포·운영 경험**
+- **테스트, 검증 리포트, 릴리즈 노트, README 문서화**
+- **AI가 모든 결정을 대신하기보다 사람이 검토하고 승인할 수 있는 Human-in-the-loop 구조 선호**
 
 ---
 
