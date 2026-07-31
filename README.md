@@ -7,6 +7,8 @@
 물류·운영 현장에서 **8년 9개월** 동안 재고·납기·구매·출고 흐름을 경험했습니다.  
 이제는 그 문제 정의 경험을 바탕으로 **Python / FastAPI / AI 기능을 실제 서비스 흐름에 연결**하고 있습니다.
 
+**KDT AI Human 4기 우수수료생 · 최종 프로젝트 대상**
+
 [![Resume](https://img.shields.io/badge/WEB_RESUME-2563EB?style=for-the-badge&logo=readme&logoColor=white)](https://mosejong.github.io/mosejong/resume.html)
 [![PDF](https://img.shields.io/badge/PDF_RESUME-E11D48?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./assets/모세종.pdf)
 [![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mosejong)
@@ -31,20 +33,27 @@
 - 결과를 **테스트 · 지표 · 근거 · 실패 케이스**로 검증합니다.
 - 현장에서 익힌 우선순위·병목·검수 감각을 소프트웨어 설계에 가져옵니다.
 
-> **물류·운영 8년 9개월 → KDT AI Human 4기 수료 → Python/FastAPI 기반 AI 서비스 개발**
+> **물류·운영 8년 9개월 → KDT AI Human 4기 우수수료생 → Python/FastAPI 기반 AI 서비스 개발**
 
 ---
 
-# 🚀 Representative Projects
+## 🏅 Highlights
 
-> 대표 프로젝트는 **제가 맡은 범위가 분명하고, 설계 이유와 검증 결과까지 직접 설명할 수 있는 순서**로 배치했습니다.
+- **KDT AI Human 4기 우수수료생**
+- **나의 진로 아카데미아 — KDT 최종 프로젝트 대상**
+- **SchoolBridge — KDT 팀 프로젝트 최우수상**
+- **2026 공공조달데이터·AI 활용 창업경진대회 — 대면심사 진출**
 
-| Rank | Project | My Role | What I Owned | Evidence |
-|---:|---|---|---|---|
-| **1** | **[SchoolBridge](https://github.com/Maxmunzy/multicultural-ai)** | **Translation · TTS Pipeline** | NLLB 번역, 학교 용어사전, 핵심정보 보존, TTS, 품질 검증 | **39.0 → 89.6**, 8개 언어, 27 tests, Android E2E, **최우수상** |
-| **2** | **[공공조달 수요 기반 입지·물류 거점 분석](https://github.com/mosejong/procurement-logistics-ai)** | **Solo Product · Data Pipeline** | 공공데이터 수집·분류·지표·AI 해석·대시보드 | 6개 기관·9개 데이터소스, 전국 분석, **공모전 대면심사 진출** |
-| **3** | **[나의 진로 아카데미아](https://github.com/neunglog-sys/job_simulator)** | **Reporting · Data Pipeline** | 적합도 리포트, 추천 근거 개인화, 커리어넷 연동, CI | 직무군 38개 · 세부직업 204개 · 시나리오 37종 · 프로젝트 전체 564 tests |
-| **4** | **[Rainbow Bridge](https://github.com/mosejong/Rainbow-Bridge)** | **Team Lead · Backend Integration** | 팀 운영, 서비스 흐름, API 통합, 서버·배포·모바일 시연 | FastAPI · NCP · Docker · nginx · Expo 통합 |
+---
+
+## 🚀 Representative Projects
+
+| Project | My Role | What I Owned | Evidence |
+|---|---|---|---|
+| **[SchoolBridge](https://github.com/Maxmunzy/multicultural-ai)** | **Translation · TTS Pipeline** | NLLB 번역, 학교 용어사전, 핵심정보 보존, TTS, 품질 검증 | **39.0 → 89.6**, 8개 언어, 27 tests, Android E2E, **최우수상** |
+| **[공공조달 수요 기반 입지·물류 거점 분석](https://github.com/mosejong/procurement-logistics-ai)** | **Solo Product · Data Pipeline** | 공공데이터 수집·분류·지표·AI 해석·대시보드 | 6개 기관·9개 데이터소스, 전국 분석, **공모전 대면심사 진출** |
+| **[나의 진로 아카데미아](https://github.com/neunglog-sys/job_simulator)** | **Reporting · Data Pipeline** | 적합도 리포트, 추천 근거 개인화, 커리어넷 연동, CI | 직무군 38개 · 세부직업 204개 · 시나리오 37종 · 프로젝트 전체 564 tests · **대상** |
+| **[Rainbow Bridge](https://github.com/mosejong/Rainbow-Bridge)** | **Team Lead · Backend Integration** | 팀 운영, 서비스 흐름, API 통합, 서버·배포·모바일 시연 | FastAPI · NCP · Docker · nginx · Expo 통합 |
 
 ---
 
@@ -138,6 +147,10 @@
 `직무군 38개` · `세부직업 204개` · `체험 시나리오 37종` · `pytest 564 cases`
 
 > 위 규모와 테스트 수치는 **팀 전체 프로젝트 기준**이며, 제 개인 기여량으로 표시하지 않습니다.
+
+### Result
+
+**KDT 최종 프로젝트 대상 — 1팀**
 
 ### Project Stack
 
