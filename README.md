@@ -1,288 +1,222 @@
-# 모세종 | Python/FastAPI 기반 AI 서비스 개발자
+<div align="center">
 
-> **AI 기능을 API · 배포 · 검증 · 자동화 흐름으로 연결하는 개발자**  
-> 물류·운영 현장에서 8년 9개월간 실제 업무 흐름을 경험했고, 현재는 Python/FastAPI 기반으로 AI 서비스와 개발 보조 도구를 구현하고 있습니다.
+# 모세종 | Python · FastAPI 기반 AI 서비스 개발자
 
----
+### 현장에서 발견한 문제를 데이터와 AI가 동작하는 서비스로 바꿉니다.
 
-## RESUME
+물류·운영 현장에서 **8년 9개월** 동안 재고·납기·구매·출고 흐름을 경험했습니다.  
+이제는 그 문제 정의 경험을 바탕으로 **Python / FastAPI / AI 기능을 실제 서비스 흐름에 연결**하고 있습니다.
 
-- **Web Resume:** [mosejong.github.io/mosejong/resume.html](https://mosejong.github.io/mosejong/resume.html)
-- **PDF Resume:** [assets/모세종.pdf](./assets/모세종.pdf)
-- **GitHub:** [github.com/mosejong](https://github.com/mosejong)
+[![Resume](https://img.shields.io/badge/WEB_RESUME-2563EB?style=for-the-badge&logo=readme&logoColor=white)](https://mosejong.github.io/mosejong/resume.html)
+[![PDF](https://img.shields.io/badge/PDF_RESUME-E11D48?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./assets/모세종.pdf)
+[![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mosejong)
 
----
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=flat-square&logo=nginx&logoColor=white)
 
-## 한 줄 소개
-
-저는 단순히 AI 모델을 호출하는 것보다, AI 기능이 실제 서비스 안에서 **사용자 흐름, API, 데이터, 배포, 검증, 문서화**까지 이어지도록 만드는 데 관심이 있습니다.
-
-비전공자로 개발을 시작했지만, 물류·운영 현장에서 쌓은 문제 정의 능력과 팀 프로젝트 경험을 바탕으로 **실제 문제를 동작하는 서비스로 바꾸는 개발자**를 지향합니다.
-
----
-
-## Main Projects
-
-| Project | Type | Role | Keywords |
-| --- | --- | --- | --- |
-| [Context Capsule](https://github.com/mosejong/context-capsule) | 개인 프로젝트 | Python 개발 / 테스트 / 릴리즈 관리 | AI Handoff, FastAPI, Streamlit, CLI, GitHub Actions |
-| [Rainbow Bridge](https://github.com/mosejong/Rainbow-Bridge) | 6인 팀 프로젝트 | Team Lead / PM / Backend Integration | FastAPI, MongoDB, Docker, NCP, nginx, TTS |
-| [SchoolBridge](https://github.com/Maxmunzy/multicultural-ai) | 5인 팀 프로젝트 | 번역·TTS 파이프라인 | FastAPI, NLLB, Glossary, Edge-TTS, Docker |
-| [procurement-logistics-ai](https://github.com/mosejong/procurement-logistics-ai) | 개인 프로젝트 | 공공데이터 수집·분석 | Python, Pandas, Streamlit, Public Data API |
+</div>
 
 ---
 
-## 핵심 방향
+## 👋 About Me
 
-- **Python/FastAPI 기반 API 구현**
-- **LLM API, TTS, 번역, 검색 흐름을 서비스 기능으로 연결**
-- **Docker, nginx, NCP, GitHub Actions 기반 배포·운영 경험**
-- **테스트, 검증 리포트, 릴리즈 노트, README 문서화**
-- **AI가 모든 결정을 대신하기보다 사람이 검토하고 승인할 수 있는 Human-in-the-loop 구조 선호**
+저는 **AI 모델을 호출하는 코드 하나**보다, 그 기능이 실제 서비스 안에서 어떻게 쓰이는지를 더 중요하게 생각합니다.
 
----
+- 사용자 문제를 **기능 요구사항과 데이터 흐름**으로 정리합니다.
+- AI 기능을 **API · DB · UI · 배포 흐름**에 연결합니다.
+- 결과가 그럴듯한지보다 **테스트 · 지표 · 근거 · 실패 케이스**로 검증하려고 합니다.
+- 현장에서 익힌 우선순위·병목·검수 감각을 소프트웨어 설계에 가져옵니다.
 
-## Projects
-
-### 1. [Context Capsule](https://github.com/mosejong/context-capsule)
-
-팀 프로젝트와 AI 협업 과정에서 직접 느낀 문제를 바탕으로 만든 **AI 작업 인수인계 도구**입니다.
-
-AI에게 작업을 맡길 때 가장 큰 문제는 단순히 모델 성능이 아니었습니다.  
-필요한 컨텍스트를 얼마나 정확하고 적게 전달하느냐, 그리고 결과를 사람이 얼마나 쉽게 읽고 검토할 수 있느냐가 결과 품질에 큰 영향을 줬습니다.
-
-#### Why I Built This
-
-- AI에게 작업을 맡길 때 어떤 파일을 보여줘야 할지 매번 고민해야 함
-- 전체 레포를 넣으면 토큰은 많이 쓰지만 정작 핵심 파일을 놓칠 수 있음
-- 팀원에게 작업을 넘길 때 배경, 금지사항, 완료 기준이 누락되기 쉬움
-- AI가 제안한 변경을 사람이 검토하고 승인할 수 있는 구조가 필요함
-
-그래서 레포지토리와 작업 요청을 분석해, AI나 팀원에게 넘길 수 있는 작업 브리프를 생성하는 도구를 만들고 있습니다.
-
-#### Current Version
-
-- **Latest Release:** [v0.2.14](https://github.com/mosejong/context-capsule/releases/tag/v0.2.14)
-- **Release Focus:** FastAPI result trust flow and guided result reading order
-- **Commit:** `50d48ed Improve FastAPI result trust flow`
-
-#### Core Features
-
-- 레포지토리 구조 분석
-- 작업 요청 기반 관련 파일 추천
-- AI 작업용 인수인계 프롬프트 생성
-- 팀원 작업 가이드 생성
-- 주니어 개발자용 설명 생성
-- 작업 리스크 분석
-- GitHub Issue Packet 생성
-- FastAPI 결과 화면 읽기 순서 정리
-- AI 프롬프트 복사 버튼
-- Streamlit 대시보드 / CLI / Windows 실행 지원
-
-#### v0.2.14 Updates
-
-- FastAPI 결과 화면을 `요약 → 추천 첫 행동 → 근거 파일 → 충돌/위험 → 복붙 프롬프트` 흐름으로 재정리
-- `98.6%` vs `98.08%` 같은 수치 충돌을 위험 목록에 묻지 않고 별도 신뢰도 카드로 표시
-- AI 프롬프트 복사 버튼 추가
-- 온보딩, 한국어 안내, START_HERE, README, 릴리즈 문서 정리
-- API/CLI의 guided result reading order를 UI와 동일하게 정렬
-- v0.2.14 ZIP 빌드 및 GitHub Release 업로드
-
-#### Validation
-
-- pytest: **141 passed**
-- compileall: passed
-- validate_mvp.py --repeat 10: passed
-- validate_user_speech.py: passed
-- GitHub Actions main: success
-- GitHub Actions v0.2.14 tag: success
-- Release ZIP verification: passed
-
-#### Direction
-
-Context Capsule은 AI가 마음대로 코드를 수정하게 만드는 도구가 아닙니다.
-
-제가 중요하게 보는 방향은 **AI가 제안하고, 사람이 검토하고, 승인하는 구조**입니다.
-
-즉, AI 작업을 완전 자동화하기보다 사람이 통제 가능한 형태로 AI에게 일을 넘겨주는 도구를 목표로 하고 있습니다.
-
-#### Tech
-
-`Python` · `FastAPI` · `Streamlit` · `CLI` · `GitHub Issue Workflow` · `Retrieval` · `Token Budgeting` · `Windows Launcher`
+> **물류·운영 8년 9개월 → KDT AI Human 4기 수료 → Python/FastAPI 기반 AI 서비스 개발**
 
 ---
 
-### 2. [Rainbow Bridge](https://github.com/mosejong/Rainbow-Bridge)
+## 🚀 Selected Projects
 
-반려동물의 시한부 선고부터 이별, 장례, 회복까지 이어지는 **AI 펫로스 애프터케어 서비스**입니다.
-
-이 프로젝트는 제가 모든 기술 파트를 깊게 구현했다기보다, 팀장/PM으로서 여러 파트가 하나의 사용자 흐름으로 연결되도록 조율한 프로젝트입니다.
-
-<img src="./assets/rainbow-bridge-demo.gif" width="720" alt="Rainbow Bridge demo" />
-
-#### My Role
-
-- Team Lead / PM
-- 서비스 흐름 설계 및 발표 구조 정리
-- 역할 분담, 일정 관리, 기능 우선순위 조율
-- 백엔드 API 및 기능 통합 참여
-- NCP 서버 운영
-- Docker 기반 배포 환경 구성
-- nginx / HTTPS 운영 경험
-- Expo 기반 iOS·Android 모바일 시연 흐름 확인
-- GPU 터널링 및 외부 AI 기능 연동 경험
-- 안전 라우팅, 평가 리포트, 제출 산출물 정리
-
-#### What I Learned
-
-Rainbow Bridge를 통해 AI 서비스는 모델 하나만 잘 붙인다고 완성되지 않는다는 것을 배웠습니다.
-
-감정 체크인, 미션, 추모 메시지, TTS, 영상 생성, 안전 라우팅, 사용자 화면, 서버 운영이 서로 맞물려야 실제 시연 가능한 서비스가 되었습니다.
-
-특히 팀장으로서 다음의 중요성을 경험했습니다.
-
-- 기능보다 먼저 전체 서비스 흐름을 정리하는 것
-- 각 파트가 연결될 수 있도록 API와 데이터 구조를 맞추는 것
-- 인프라를 먼저 열어 팀원이 같은 환경에서 테스트할 수 있게 하는 것
-- AI 서비스에서 안전 라우팅과 차단 기준을 우선 설계하는 것
-- 발표와 문서화까지 포함해야 프로젝트가 설명 가능한 결과물이 되는 것
-
-#### Result
-
-- 3주 프로토타입 기간 내 핵심 사용자 흐름 구현
-- 감정 체크인, 기억 기반 추모 메시지, TTS, 미션, 타임라인, 회복 리포트 구현
-- L2 이상 위기 감지 시 콘텐츠 생성을 차단하고 1393 안내로 전환하는 안전 구조 적용
-- NCP 기반 실서버 배포 및 Expo 기반 iOS·Android 모바일 시연 경험
-- README, 평가 리포트, 호출 로그, 팀 회고 등 제출 산출물 정리
-
-#### Tech
-
-`FastAPI` · `MongoDB` · `SQLite` · `Redis` · `Gemini API` · `TTS` · `LivePortrait` · `FFmpeg` · `Docker` · `NCP` · `nginx` · `GitHub Actions` · `Expo`
+| Project | What I did | Evidence |
+|---|---|---|
+| **[SchoolBridge](https://github.com/Maxmunzy/multicultural-ai)** | 번역·TTS 파이프라인 설계, NLLB, 학교 용어사전, 정보 보존 후처리 | **39.0 → 89.6**, 8개 언어, backend 27 tests, Android E2E |
+| **[공공조달 수요 기반 입지·물류 거점 분석](https://github.com/mosejong/procurement-logistics-ai)** | 물류 현장 경험을 공공데이터 제품으로 확장, 수집·분석·추천·AI 해석 구현 | 6개 기관·9개 데이터소스, 전국 분석, **공모전 대면심사 진출** |
+| **[나의 진로 아카데미아](https://github.com/neunglog-sys/job_simulator)** | Reporting · Data Pipeline, 적합도 리포트·추천 근거 개인화·커리어넷 연동·CI | 직무군 38개, 시나리오 37종, 프로젝트 전체 pytest 564 cases |
+| **[Rainbow Bridge](https://github.com/mosejong/Rainbow-Bridge)** | Team Lead · PM, Backend Integration, 배포·운영 흐름 정리 | FastAPI · NCP · Docker · nginx · Expo 기반 통합 시연 |
 
 ---
 
-### 3. [SchoolBridge](https://github.com/Maxmunzy/multicultural-ai)
+## 🥇 SchoolBridge
 
-다문화가정 학부모가 한국어 가정통신문에서 날짜, 준비물, 비용, 제출 여부 같은 핵심 정보를 놓치지 않도록 돕는 **AI 번역·요약·TTS 서비스**입니다.
+### 다문화 가정 학부모를 위한 가정통신문 AI 번역 · TTS 서비스
 
-#### Problem
+**제가 가장 깊게 설명할 수 있는 AI 파이프라인 설계 프로젝트입니다.**
 
-가정통신문은 단순 번역만으로는 충분하지 않았습니다.  
-학부모에게 중요한 것은 문장 전체의 자연스러운 번역보다, 실제로 해야 할 일을 정확히 이해하는 것이었습니다.
+가정통신문은 단순히 문장을 자연스럽게 번역하는 것보다 **날짜·시간·비용·준비물·제출 여부 같은 행동 정보가 틀리지 않는 것**이 더 중요하다고 판단했습니다.
 
-예를 들어 다음과 같은 정보는 틀리면 서비스 신뢰도가 크게 떨어집니다.
+### My Role
 
-- 날짜 / 시간
-- 준비물
-- 비용
-- 제출 여부
-- 장소
-- 전화번호 / URL
-- 학교 행정 용어
+- `facebook/nllb-200-distilled-600M` 기반 **8개 언어 번역 파이프라인** 설계
+- 학교 현장 표현을 위한 **도메인 용어사전(Glossary)** 구축
+- 날짜·금액·전화번호·URL 등 **핵심 정보 보존 후처리**
+- Edge-TTS 언어별 보이스 매핑 및 음성 출력
+- 번역 품질 검수 루프와 Round-trip 평가
+- FastAPI 통합 파이프라인 및 Android 실기기 E2E 검증 참여
 
-#### My Role
+### Result
 
-- 번역/TTS 파이프라인 설계 및 구현
-- NLLB 기반 8개 언어 번역 실험
-- 학교 도메인 용어 글로사리 구축
-- 날짜·금액·URL·전화번호 등 핵심 정보 보존 후처리
-- Edge-TTS 기반 음성 출력 실험
-- 번역 품질 검수 루프와 발표 흐름 정리
+`NLLB 39.0 → Glossary 적용 89.6` · `8 languages` · `backend pytest 27` · `GitHub Actions PR gate`
 
-#### Design Intention
+**Project Result:** KDT 팀 프로젝트 **최우수상**
 
-이 서비스는 다국적 학부모를 대상으로 하며, 사용자가 유료로 부담하기 어려운 구조라고 판단했습니다.  
-그래서 외부 유료 API 의존도를 낮추고, 무료 또는 로컬 기반 번역 모델을 활용하는 방향을 검토했습니다.
+### Tech
 
-다만 일반 번역 모델은 학교 현장에서 자주 쓰이는 표현을 오역할 가능성이 있었습니다.
+`Python` · `FastAPI` · `Transformers` · `NLLB` · `Pandas` · `Glossary` · `Edge-TTS` · `Docker` · `Android`
 
-이를 줄이기 위해 **글로사리 + 템플릿 기반 보정 구조**를 설계했습니다.  
-모델이 번역을 담당하되, 학교 도메인에서 반드시 보호해야 하는 표현은 별도 사전과 후처리 구조로 보정하는 방식입니다.
-
-#### Result
-
-- 한국어 가정통신문 → 할 일 추출 → 카테고리 분류 → 다국어 번역 → TTS → 체크리스트 흐름 구현
-- 베트남어, 영어, 러시아어, 말레이시아어, 몽골어, 중국어, 태국어, 일본어 번역 지원
-- 용어사전 적용 전후 품질 평가: NLLB 39.0점 → 사전 적용 89.6점
-- backend pytest 27개와 GitHub Actions 기반 PR 게이트 구성
-- Android 실기기 기반 E2E 파이프라인 검증
-
-#### Tech
-
-`Python` · `FastAPI` · `Transformers` · `facebook/nllb-200-distilled-600M` · `Pandas` · `CSV` · `Edge-TTS` · `Docker` · `Android`
+🔗 **[Repository](https://github.com/Maxmunzy/multicultural-ai)**
 
 ---
 
-## Additional Experience
+## 🚚 공공조달 수요 기반 입지 · 물류 거점 분석
 
-### [procurement-logistics-ai](https://github.com/mosejong/procurement-logistics-ai)
+### 8년 9개월의 물류 경험을 처음으로 소프트웨어 제품에 연결한 개인 프로젝트
 
-공공조달 데이터를 활용해 지역·품목별 공공수요와 물류 거점 후보를 분석한 데이터 기반 창업·입지 분석 프로젝트입니다.  
-물류 현장에서 경험한 수요 흐름과 납품 구조 감각을 공공데이터 분석으로 확장했습니다.
+물류 현장에서 일하며 쌓은 **수요·납품·재고·거점에 대한 감각**을 경험으로만 남기지 않고, 공공데이터를 이용해 확인할 수 있는 제품으로 만들었습니다.
+
+나라장터 입찰공고를 단순 검색하는 대신 **지역·품목별 공공수요 신호**로 해석하고, 계약·인구·상권·물류창고·학교급식 데이터를 함께 연결했습니다.
+
+### What I Built
+
+- 조달청·aT·행정안전부·소상공인시장진흥공단·국토교통부·KOSIS 등 **6개 기관 / 9개 데이터소스 결합**
+- 나라장터 입찰공고 **100,083건**, 계약정보 **38,367건** 수집·분석
+- aT 학교급식 입찰·낙찰 **734,242건**으로 수요 근거 보강
+- TF-IDF + Logistic Regression 기반 공고 분류
+- 지역·품목별 `opportunity_score`, 인구 보정, 경쟁도, 물류 거점 지표 설계
+- Gemini API 기반 **AI 해석 5종**
+- Streamlit 기반 전국 지도·지역 비교·물류 거점 분석 대시보드
+
+### External Validation
+
+**2026 공공조달데이터·AI 활용 창업경진대회 출품 → 대면심사 진출**
+
+### Tech
 
 `Python` · `Pandas` · `Scikit-learn` · `Public Data API` · `Gemini API` · `Streamlit`
 
----
-
-## Tech Stack
-
-### Backend / API
-
-`Python` · `FastAPI` · `REST API` · `SQLite` · `MongoDB` · `Redis`
-
-### AI / NLP
-
-`LLM API` · `Prompt Engineering` · `Transformers` · `NLLB` · `Glossary` · `TTS` · `Retrieval`
-
-### Data
-
-`Pandas` · `CSV` · `Public Data API` · `Scikit-learn`
-
-### Infra / Deployment
-
-`Docker` · `NCP Server` · `nginx` · `HTTPS` · `GitHub Actions` · `DuckDNS` · `Let's Encrypt`
-
-### Frontend / Tools
-
-`React` · `Vite` · `Tailwind CSS` · `Streamlit` · `Android` · `Expo`
+🔗 **[Repository](https://github.com/mosejong/procurement-logistics-ai)** · **[Live Demo](https://procurement-logistics-ai-5qian47widxpcuqefpjipy.streamlit.app)**
 
 ---
 
-## Working Principles
+## 🎓 나의 진로 아카데미아
 
-- AI 출력은 최종 답이 아니라 **검증해야 할 중간 산출물**로 봅니다.
-- 기술 선택은 사용자 상황, 비용 구조, 운영 제약과 함께 판단해야 한다고 생각합니다.
-- 기능 구현만큼 실패 케이스, 예외 처리, 품질 기준을 중요하게 봅니다.
-- 팀 프로젝트에서는 역할, 인터페이스, 완료 기준이 명확해야 협업이 가능하다고 생각합니다.
-- AI가 모든 결정을 대신하기보다, 사람이 검토하고 승인할 수 있는 구조를 선호합니다.
+### AI 아바타와 상담하고, 가상 회사에서 직무를 직접 체험하는 진로 탐색 플랫폼
 
----
+KDT 과정의 최종 팀 프로젝트로, **읽고 고르는 진로 탐색이 아니라 직접 해보고 판단하는 경험**을 목표로 구현했습니다.
 
-## Current Focus
+### My Role — Reporting · Data Pipeline
 
-현재는 AI 서비스를 단순히 “모델을 붙이는 것”이 아니라, 실제 사용자가 이해하고 사용할 수 있는 흐름으로 설계하는 것에 집중하고 있습니다.
+- 직무 적합도 **리포트 구조 설계**: 역량 레이더 · AI 해석 · 평가 근거 각주 · PDF 출력
+- 상담·체험 기록을 이용한 **추천 근거 개인화**
+- **커리어넷 진로심리검사 연동**
+- 캐릭터 스프라이트 작업
+- **CI 파이프라인** 구성
 
-특히 다음 주제에 관심이 있습니다.
+### Project Scale
 
-- Python/FastAPI 기반 백엔드 API 구현
-- LLM 기반 업무 보조 도구
-- AI 작업 인수인계와 협업 자동화
-- 번역/TTS 기반 접근성 개선
-- 운영 경험을 반영한 실용적인 AI 서비스
+`직무군 38개` · `세부직업 204개` · `체험 시나리오 37종` · `pytest 564 cases (project-wide)`
 
----
+### Architecture
 
-## Positioning
+`React 19` · `TypeScript` · `FastAPI` · `PostgreSQL + pgvector` · `Redis` · `OpenAI` · `Gemini` · `MuseTalk` · `Docker Compose` · `Nginx`
 
-저는 비전공자로 AI 개발을 시작했지만, 운영 현장에서 쌓은 문제 정의 능력과 팀 프로젝트 경험을 바탕으로 기술을 실제 서비스 흐름으로 연결하는 개발자가 되고자 합니다.
-
-제가 지향하는 개발자는 가장 화려한 모델을 고르는 사람이 아니라, 사용자의 문제와 운영 조건을 이해하고 그 안에서 동작 가능한 AI 서비스를 만들어내는 사람입니다.
+🔗 **[Repository](https://github.com/neunglog-sys/job_simulator)**
 
 ---
 
-## Contact
+## 🌈 Rainbow Bridge
 
-- GitHub: [github.com/mosejong](https://github.com/mosejong)
-- Web Resume: [resume.html](https://mosejong.github.io/mosejong/resume.html)
-- PDF Resume: [모세종.pdf](./assets/모세종.pdf)
-- Portfolio: 준비 중
+### AI 펫로스 애프터케어 서비스 · 6인 팀 프로젝트
+
+이 프로젝트에서 제 핵심 역할은 특정 모델 하나를 깊게 구현하는 것보다 **여러 기능이 하나의 사용자 흐름으로 연결되도록 팀과 서비스를 정리하는 것**이었습니다.
+
+### My Role — Team Lead · PM · Backend Integration
+
+- 역할 분담·일정·기능 우선순위 조율
+- 서비스 흐름 및 API 통합 참여
+- NCP 서버 운영
+- Docker 기반 배포 환경 구성
+- nginx / HTTPS 운영
+- Expo 기반 iOS·Android 모바일 시연
+- AI 기능·GPU 터널링·멀티미디어 파이프라인 통합
+- 안전 라우팅·평가 리포트·제출 산출물 정리
+
+### What It Proved
+
+**모델 → API → 서버 → 모바일 → 시연**까지 여러 파트를 연결하는 경험과, 6인 팀의 개발 흐름을 끝까지 운영한 경험을 얻었습니다.
+
+### Tech
+
+`FastAPI` · `MongoDB` · `SQLite` · `Redis` · `Gemini API` · `TTS` · `LivePortrait` · `FFmpeg` · `Docker` · `NCP` · `nginx` · `Expo`
+
+🔗 **[Repository](https://github.com/mosejong/Rainbow-Bridge)**
+
+---
+
+## 🧪 R&D / Side Project
+
+### [Context Capsule](https://github.com/mosejong/context-capsule)
+
+AI에게 레포지토리 작업을 넘길 때 필요한 **관련 파일·작업 범위·금지 영역·완료 기준을 정리하는 AI Handoff 도구**입니다.
+
+현재 대표 포트폴리오에서는 한 단계 뒤에 두고 있지만, 개인적으로 **Retrieval · FastAPI · 테스트 · 릴리즈 자동화**를 실험하고 개선하는 프로젝트로 유지하고 있습니다.
+
+`Python` · `FastAPI` · `Streamlit` · `CLI` · `Retrieval` · `GitHub Actions`
+
+---
+
+## 🛠 Tech Stack
+
+| Area | Stack |
+|---|---|
+| **Backend / API** | Python, FastAPI, REST API, Pydantic, SQLite, MongoDB, PostgreSQL, Redis |
+| **AI / NLP** | LLM API, OpenAI, Gemini, Transformers, NLLB, RAG, pgvector, TTS, Prompt Engineering |
+| **Data** | Pandas, CSV, Scikit-learn, Public Data API |
+| **Infra / Delivery** | Docker, Docker Compose, NCP, nginx, HTTPS, GitHub Actions |
+| **Frontend / Client** | React, TypeScript, Vite, Streamlit, Android, Expo |
+| **Validation** | pytest, E2E, quality evaluation, regression checks, CI gates |
+
+---
+
+## 🧭 How I Work
+
+**Problem → Design → Build → Verify → Explain**
+
+1. **Problem** — 사용자와 현장의 문제를 먼저 정의합니다.
+2. **Design** — 데이터 흐름·실패 케이스·검증 기준을 함께 설계합니다.
+3. **Build** — Python/FastAPI를 중심으로 AI 기능을 서비스에 연결합니다.
+4. **Verify** — 테스트와 지표로 결과를 확인합니다.
+5. **Explain** — README·리포트·발표 자료로 왜 이렇게 만들었는지 남깁니다.
+
+---
+
+## 💼 Experience
+
+### 물류 · 운영 · 재고 · 납기 관리 — 8년 9개월
+
+- 입고·출고·재고·납기·구매·거래처 커뮤니케이션
+- 제한된 인력 환경에서 업무 우선순위와 병목 관리
+- 팀장 대행 및 소규모 인력 운영 경험
+- 현장에서 익힌 검수 기준과 예외 대응을 개발 문제 정의에 활용
+
+### KDT AI Human 4기 — 2026.03 ~ 2026.07 **수료**
+
+AI 모델 자체보다 **AI 기능이 실제 사용자 흐름 안에서 동작하도록 연결하고 검증하는 과정**에 집중했습니다.
+
+---
+
+<div align="center">
+
+**GitHub** · [github.com/mosejong](https://github.com/mosejong)  
+**Resume** · [Web](https://mosejong.github.io/mosejong/resume.html) · [PDF](./assets/모세종.pdf)
+
+</div>
