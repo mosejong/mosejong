@@ -1,84 +1,53 @@
 <!doctype html>
-<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>모세종 Visual Resume 2026.08</title>
-<style>
-@page { size:A4; margin:0; }
-.toolbar { width:210mm; margin:10px auto 0; display:flex; justify-content:flex-end; gap:8px; font-family:"Noto Sans CJK KR","NanumGothic",sans-serif; }
-.toolbar a { padding:8px 12px; border-radius:999px; background:#182342; color:#fff; font-size:13px; font-weight:800; box-shadow:0 4px 12px rgba(24,35,66,.18); }
-.toolbar a.secondary { background:#6656f5; }
-@media (max-width: 900px) { .toolbar { width:100%; padding:0 12px; } .page { transform-origin:top left; } }
-@media print { .toolbar { display:none !important; } }
-* { box-sizing:border-box; }
-html,body { margin:0; padding:0; background:#e9edf5; color:#172136; font-family:"Noto Sans CJK KR","NanumGothic",sans-serif; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-a { color:inherit; text-decoration:none; }
-.page { width:210mm; height:297mm; margin:0 auto; background:#fff; position:relative; overflow:hidden; }
-.hero { height:42mm; padding:9mm 13mm 6mm; color:#fff; position:relative; overflow:hidden; background:linear-gradient(122deg,#111d3f 0%,#304482 56%,#6656df 100%); }
-.hero:before { content:""; position:absolute; width:70mm; height:70mm; right:-18mm; top:-35mm; border-radius:50%; background:rgba(83,209,247,.18); }
-.hero:after { content:""; position:absolute; width:54mm; height:54mm; right:26mm; bottom:-38mm; border:7mm solid rgba(255,255,255,.07); border-radius:50%; }
-.hero-row { position:relative; z-index:2; display:flex; justify-content:space-between; align-items:center; gap:8mm; }
-.name { margin:0 0 1.4mm; font-size:22pt; line-height:1; letter-spacing:-1.2px; }
-.role { margin:0 0 2.4mm; font-size:10.6pt; font-weight:800; color:#c6f2ff; }
-.tagline { max-width:142mm; font-size:8.6pt; line-height:1.48; color:#eef2ff; }
-.photo { width:25mm; height:30mm; object-fit:cover; border-radius:5.2mm; border:1mm solid rgba(255,255,255,.9); background:#fff; box-shadow:0 2.5mm 6mm rgba(0,0,0,.22); }
-.contact { height:10mm; padding:0 13mm; display:flex; align-items:center; gap:8mm; border-bottom:1px solid #e3e7ef; font-size:7.5pt; color:#4c5870; white-space:nowrap; }
-.dot { display:inline-block; width:1.8mm; height:1.8mm; border-radius:50%; background:#6656f5; margin-right:1.1mm; vertical-align:-.1mm; }
-.metrics { height:21mm; padding:3.5mm 13mm 3mm; display:grid; grid-template-columns:repeat(4,1fr); gap:3mm; }
-.metric { min-width:0; padding:2.6mm 3.2mm; border:1px solid #dfe3ec; border-radius:3.5mm; background:linear-gradient(180deg,#fff,#f8f8ff); }
-.metric b { display:block; font-size:11.8pt; line-height:1.05; color:#5c4df3; margin-bottom:1.1mm; letter-spacing:-.3px; white-space:nowrap; }
-.metric span { display:block; font-size:6.7pt; line-height:1.3; color:#667188; }
-.content { position:absolute; left:13mm; right:13mm; top:73mm; bottom:7mm; display:grid; grid-template-columns:55mm 1fr; gap:5mm; }
-.sidebar { height:100%; padding:4.4mm; border-radius:4.5mm; background:#f4f6fa; border:1px solid #e0e5ee; overflow:hidden; }
-.side-section { margin-bottom:4.2mm; }
-.side-section:last-child { margin-bottom:0; }
-.heading { display:flex; align-items:center; gap:1.7mm; margin:0 0 2.3mm; font-size:9pt; font-weight:900; color:#18223b; letter-spacing:-.3px; }
-.heading:before { content:""; width:2mm; height:5.4mm; border-radius:1mm; background:linear-gradient(#6d59fb,#34bce8); }
-.profile-copy { font-size:7.15pt; line-height:1.52; color:#48546b; }
-.profile-copy b { color:#172137; }
-.skills { display:flex; flex-wrap:wrap; gap:1.2mm; }
-.pill { padding:1.2mm 1.7mm; border-radius:8mm; border:1px solid #d9dfeb; background:#fff; font-size:6.55pt; line-height:1; color:#3f4a61; }
-.pill.core { color:#5947ed; border-color:#d5ceff; background:#efedff; font-weight:800; }
-.career { padding:2.5mm 2.7mm; background:#fff; border-radius:3mm; border-left:1.2mm solid #5e4ff2; }
-.career b { display:block; font-size:7.4pt; color:#18223a; margin-bottom:.8mm; }
-.career span { display:block; font-size:6.7pt; line-height:1.45; color:#657087; }
-.linkbox { padding:2.4mm 2.7mm; border-radius:3mm; background:#182342; color:#f4f7ff; font-size:6.75pt; line-height:1.5; }
-.linkbox b { color:#9ce9ff; }
-.projects { height:100%; display:grid; grid-template-rows:56mm 47mm 49mm 1fr; gap:3mm; }
-.card { min-height:0; padding:3.3mm 3.8mm; border:1px solid #dfe4ee; border-radius:4mm; background:#fff; overflow:hidden; }
-.card.flagship { border-color:#c9c1ff; box-shadow:inset 1.5mm 0 #6656f5; background:linear-gradient(135deg,#fff 0%,#fcfbff 100%); }
-.card-head { display:flex; justify-content:space-between; align-items:flex-start; gap:4mm; margin-bottom:1.2mm; }
-.card-title { font-size:10.2pt; line-height:1.2; font-weight:900; letter-spacing:-.35px; color:#111b30; }
-.card-role { flex:none; font-size:6.9pt; line-height:1.25; font-weight:900; color:#5a49ef; text-align:right; }
-.card-desc { font-size:7.1pt; line-height:1.35; color:#59657b; margin-bottom:1.2mm; }
-.badge { display:inline-block; margin-left:1.5mm; padding:.75mm 1.6mm; border-radius:8mm; background:#6151ef; color:#fff; font-size:6.1pt; font-weight:900; vertical-align:.3mm; white-space:nowrap; }
-ul { margin:0; padding-left:4mm; }
-.card li { margin:.3mm 0; font-size:6.9pt; line-height:1.35; color:#29354c; }
-.evidence { margin-top:1.5mm; padding:1.5mm 2mm; border-radius:2.4mm; background:#f0edff; color:#43389c; font-size:6.45pt; line-height:1.3; display:flex; justify-content:space-between; gap:2mm; }
-.evidence strong { color:#5d4cf1; }
-.mini-grid { min-height:0; display:grid; grid-template-columns:1fr 1fr; gap:3mm; }
-.mini { padding:3mm 3.4mm; border:1px solid #dfe4ee; border-radius:3.7mm; overflow:hidden; }
-.mini h3 { margin:0 0 .8mm; font-size:8.4pt; color:#152039; }
-.mini .mini-role { font-size:6.5pt; font-weight:900; color:#5a49ee; margin-bottom:.8mm; }
-.mini p { margin:0; font-size:6.65pt; line-height:1.38; color:#59657a; }
-.footer { position:absolute; left:13mm; right:13mm; bottom:2.7mm; display:flex; justify-content:space-between; font-size:6pt; color:#8a93a5; }
-</style></head>
-<body><nav class="toolbar" aria-label="Resume downloads"><a href="./assets/모세종_이력서.pdf">Visual PDF</a><a class="secondary" href="./assets/모세종_ATS.pdf">ATS PDF</a><a href="https://github.com/mosejong">GitHub</a></nav><div class="page">
-<header class="hero"><div class="hero-row"><div><h1 class="name">모세종</h1><div class="role">Python · FastAPI 기반 AI 서비스 백엔드 개발자</div><div class="tagline">물류·운영 현장에서 발견한 문제를 데이터와 AI가 동작하는 서비스로 바꿉니다. 모델 호출에 머무르지 않고 API·데이터·배포·검증 흐름까지 연결합니다.</div></div><img class="photo" src="./assets/증명사진.jpg" alt="프로필 사진"></div></header>
-<div class="contact"><span><i class="dot"></i>010-5413-4635</span><span><i class="dot"></i>ahtpwhd95@gmail.com</span><a href="https://github.com/mosejong"><i class="dot"></i>github.com/mosejong</a><a href="https://mosejong.github.io/mosejong/resume.html"><i class="dot"></i>Web Resume</a></div>
-<section class="metrics"><div class="metric"><b>8년 9개월</b><span>물류·운영 현장 경험</span></div><div class="metric"><b>우수수료생</b><span>이스트소프트 KDT AI Human 4기</span></div><div class="metric"><b>대상</b><span>최종 프로젝트 · Jobiverse</span></div><div class="metric"><b>최우수상</b><span>1차 프로젝트 · SchoolBridge</span></div></section>
-<main class="content">
-<aside class="sidebar">
-  <section class="side-section"><h2 class="heading">Profile</h2><div class="profile-copy"><b>현장 경험을 가진 전환형 개발자</b><br>문제를 요구사항과 데이터 흐름으로 정리하고, Python/FastAPI 기반으로 AI 기능을 서비스에 연결합니다. 결과는 테스트·지표·실패 사례로 검증합니다.</div></section>
-  <section class="side-section"><h2 class="heading">Core Stack</h2><div class="skills"><span class="pill core">Python</span><span class="pill core">FastAPI</span><span class="pill core">REST API</span><span class="pill">PostgreSQL</span><span class="pill">pgvector</span><span class="pill">Redis</span><span class="pill">Docker</span><span class="pill">Nginx</span><span class="pill">GitHub Actions</span><span class="pill">RAG</span><span class="pill">NLLB</span><span class="pill">TTS</span><span class="pill">Pandas</span><span class="pill">Scikit-learn</span><span class="pill">Streamlit</span></div></section>
-  <section class="side-section"><h2 class="heading">Experience</h2><div class="career"><b>미래부품 계열 · 물류/운영 대리</b><span>총 8년 9개월<br>입·출고, 재고, 납기, 구매, 거래처 대응, 팀장 대행. 제한된 인력에서 우선순위와 병목을 관리한 경험을 서비스 설계에 연결합니다.</span></div></section>
-  <section class="side-section"><h2 class="heading">Education</h2><div class="career"><b>이스트소프트 K-Digital Training</b><span>AI Human 4기 · 800시간<br>2026.03 - 2026.07<br><b style="color:#5a49ef">우수수료생</b></span></div></section>
-  <section class="side-section"><h2 class="heading">External Validation</h2><div class="career"><b>공공조달데이터·AI 창업경진대회</b><span>개인 프로젝트 출품 · 대면심사 진출</span></div></section>
-  <section class="side-section"><div class="linkbox"><b>Portfolio</b><br>GitHub에서 프로젝트별 README, 코드, 테스트, 데모 링크를 확인할 수 있습니다.</div></section>
-</aside>
-<section class="projects">
-  <article class="card flagship"><div class="card-head"><div class="card-title">나의 진로 아카데미아 · Jobiverse <span class="badge">최종 프로젝트 대상</span></div><div class="card-role">Reporting · Data Pipeline</div></div><div class="card-desc">AI 상담 → 가상 직무 체험 → 근거 기반 적합도 리포트로 이어지는 6인 팀 진로 탐색 플랫폼</div><ul><li>역량 레이더·AI 해석·평가 근거 각주·PDF 출력으로 구성된 직무 적합도 리포트 구조 설계</li><li>상담·체험 기록 기반 추천 근거 개인화, 커리어넷 진로심리검사 연동, CI 파이프라인 구성</li><li>ReportLab·pypdf 기반 리포트 생성과 공개 직업정보 근거 표기 흐름 구현</li></ul><div class="evidence"><span><strong>Project-wide</strong> · 직무군 38 · 세부직업 204 · 시나리오 37 · pytest 564</span><a href="https://github.com/neunglog-sys/job_simulator">Repository ↗</a></div></article>
-  <article class="card"><div class="card-head"><div class="card-title">SchoolBridge <span class="badge">최우수상</span></div><div class="card-role">Translation · TTS Pipeline</div></div><div class="card-desc">다문화 가정 학부모를 위한 가정통신문 AI 번역·TTS 서비스 · 5인 팀</div><ul><li>NLLB 기반 8개 언어 번역, 학교 도메인 Glossary, 날짜·금액·전화번호 등 핵심정보 보존 후처리 설계</li><li>Edge-TTS 연결, 번역 품질 검수, FastAPI 통합과 Android 실기기 E2E 검증 참여</li></ul><div class="evidence"><span><strong>Result</strong> · 품질 39.0 → 89.6 · backend pytest 27 · GitHub Actions PR gate</span><a href="https://github.com/Maxmunzy/multicultural-ai">Repository ↗</a></div></article>
-  <article class="card"><div class="card-head"><div class="card-title">공공조달 기반 물류 거점 분석</div><div class="card-role">Solo Product · Data Pipeline</div></div><div class="card-desc">8년 9개월의 물류 경험을 공공데이터 기반 제품으로 확장한 개인 프로젝트</div><ul><li>6개 기관·9개 데이터소스 결합, 입찰 100,083건·계약 38,367건·학교급식 734,242건 수집·분석</li><li>TF-IDF + Logistic Regression, 지역·품목 지표, Gemini 해석 5종, Streamlit 대시보드 구현</li></ul><div class="evidence"><span><strong>Result</strong> · 2026 공공조달데이터·AI 활용 창업경진대회 대면심사 진출</span><a href="https://github.com/mosejong/procurement-logistics-ai">Repository ↗</a></div></article>
-  <div class="mini-grid"><article class="mini"><h3>Rainbow Bridge</h3><div class="mini-role">Team Lead · Backend Integration</div><p>6인 팀의 서비스 흐름, FastAPI API 통합, NCP·Docker·nginx·HTTPS, Expo 모바일 시연을 연결했습니다.</p></article><article class="mini"><h3>How I Work</h3><div class="mini-role">Problem → Design → Build → Verify</div><p>정상 흐름뿐 아니라 실패 케이스와 운영 제약을 함께 설계하고, pytest·E2E·정량 지표로 검증합니다.</p></article></div>
-</section>
-</main>
-<div class="footer"><span>Updated 2026.08</span><span>상세 역할·근거·코드는 GitHub에서 확인할 수 있습니다.</span></div>
-</div></body></html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>모세종 | Python · FastAPI 기반 AI 서비스 백엔드 개발자</title>
+  <meta name="description" content="모세종 Python · FastAPI 기반 AI 서비스 백엔드 개발자 이력서">
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; background: #eef1f6; color: #182234; font-family: Arial, "Noto Sans KR", sans-serif; }
+    .topbar { position: sticky; top: 0; z-index: 10; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 18px; background: #182342; color: #fff; box-shadow: 0 3px 14px rgba(24,35,66,.18); }
+    .title { min-width: 0; }
+    .title strong { display: block; font-size: 16px; line-height: 1.25; }
+    .title span { display: block; margin-top: 3px; color: #cdd7ef; font-size: 12px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 8px; justify-content: flex-end; }
+    .actions a { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 0 14px; border-radius: 999px; text-decoration: none; font-size: 12px; font-weight: 700; color: #fff; background: #6257ff; }
+    .actions a.secondary { background: #314267; }
+    .wrap { width: min(1100px, 100%); margin: 0 auto; padding: 18px; }
+    .viewer { width: 100%; height: calc(100vh - 92px); min-height: 720px; border: 1px solid #d8e0eb; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 10px 30px rgba(24,35,66,.08); }
+    .viewer object { display: block; width: 100%; height: 100%; border: 0; }
+    .fallback { padding: 40px 24px; text-align: center; line-height: 1.7; }
+    .fallback a { color: #5145e7; font-weight: 700; }
+    @media (max-width: 720px) {
+      .topbar { align-items: flex-start; flex-direction: column; }
+      .actions { width: 100%; justify-content: flex-start; }
+      .wrap { padding: 10px; }
+      .viewer { height: calc(100vh - 150px); min-height: 600px; border-radius: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="title">
+      <strong>모세종 · Resume</strong>
+      <span>Python · FastAPI 기반 AI 서비스 백엔드 개발자</span>
+    </div>
+    <nav class="actions" aria-label="Resume links">
+      <a href="./assets/모세종_이력서.pdf" target="_blank" rel="noopener">PDF RESUME</a>
+      <a class="secondary" href="https://github.com/mosejong" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+  <main class="wrap">
+    <section class="viewer" aria-label="최신 이력서 PDF">
+      <object data="./assets/모세종_이력서.pdf#view=FitH" type="application/pdf">
+        <div class="fallback">
+          브라우저에서 PDF 미리보기를 지원하지 않습니다.<br>
+          <a href="./assets/모세종_이력서.pdf">최신 이력서 PDF 열기</a>
+        </div>
+      </object>
+    </section>
+  </main>
+</body>
+</html>
