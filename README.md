@@ -10,7 +10,7 @@
 **KDT AI Human 4기 우수수료생 · 최종 프로젝트 대상**
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-0EA5E9?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mosejong.github.io/)
-[![PDF](https://img.shields.io/badge/PDF_RESUME-E11D48?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./assets/모세종_이력서.pdf)
+[![이력서 PDF](https://img.shields.io/badge/%EC%9D%B4%EB%A0%A5%EC%84%9C_PDF-E11D48?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./assets/모세종_이력서.pdf)
 [![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mosejong)
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
