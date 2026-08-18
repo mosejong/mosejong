@@ -1,6 +1,6 @@
 <div align="center">
 
-# 모세종 | Python · FastAPI 기반 AI 서비스 개발자
+# 모세종 | Python · FastAPI AI 서비스 백엔드 개발자
 
 ### 현장에서 발견한 문제를 데이터와 AI가 동작하는 서비스로 바꿉니다.
 
@@ -9,7 +9,7 @@
 
 **KDT AI Human 4기 우수수료생 · 최종 프로젝트 대상**
 
-[![Resume](https://img.shields.io/badge/WEB_RESUME-2563EB?style=for-the-badge&logo=readme&logoColor=white)](https://mosejong.github.io/mosejong/resume.html)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-0EA5E9?style=for-the-badge&logo=googlechrome&logoColor=white)](https://mosejong.github.io/)
 [![PDF](https://img.shields.io/badge/PDF_RESUME-E11D48?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](./assets/모세종_이력서.pdf)
 [![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mosejong)
 
